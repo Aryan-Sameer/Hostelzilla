@@ -1,0 +1,369 @@
+.main-contain{
+    margin: 0 auto;
+    width: 1349px;
+}
+.header{
+    height: 150px;
+    text-align: center;
+    border: 5px solid #ffc107;
+    background-image: url('images/header-img.PNG');
+    width: 100%;
+}
+/***************************************** navbar ***********************************/
+#hostelzilla-logo{
+    width: 100px;
+    height: 50px;
+    mix-blend-mode: multiply;
+    padding: 0;
+}
+#navbar{
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+#navbar a{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #554444;
+}
+#navbar ul li a:hover{
+    color: black;
+}
+/************************************ check box ***********************/
+#check{
+    display: none;
+}
+label #open{
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+label #close{
+    position: absolute;
+    left: -60px;
+    cursor: pointer;
+    border-radius: 2px;
+    color: black;
+    font-size: 30px;
+    transition:all .5s ease;
+    z-index: 2;
+}
+/**************************************** side bar **************************/
+.menu{
+    width: 250px;
+    height: 450px;
+    overflow: scroll;
+    background-color: #ffc107;
+    position: absolute;
+    left: -255px;
+    transition: all .5s ease;
+    margin-top: -22px;
+    padding-top: 50px;
+    box-shadow: 0px 2px 4px grey;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+}
+#profile{
+    font-size: 42px;
+}
+#account{
+    color: black;
+}
+.menu::-webkit-scrollbar{  /**** scroll bar ***/
+    width: 0px;
+}
+.menu ul li {
+    padding: 10px 10px 10px 0px;
+    list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    transition: all .3s ease;
+    font-weight: 600;
+}
+.head a{
+    text-decoration: none;
+    font-size: 16px;
+    color: grey;
+}
+.menu ul li a:hover{
+    padding-left: 10px;
+}
+#check:checked ~ .menu{
+    left: 0px;
+}
+#check:checked ~ label #close{
+    left: 195px;
+}
+#check:checked ~ label #open{
+    left: 200px;
+    opacity: 0;
+}
+/*************************************** slogan **************************/
+#slogan h3{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+#slogan p{
+    text-align: justify;
+    width: 55%;
+    background-color: #ffc107;
+    padding: 20px;
+    border-radius: 10px;
+}
+/**************************************** hostels *******************************/
+.block h1{
+    font-weight: normal;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    padding: 50px 0px 40px 0px;
+}
+#carouselExampleCaptions-1{
+    width: 500px;
+    box-shadow: 0px 2px 4px grey;
+}
+#carouselExampleCaptions-2{
+    width: 500px;
+    box-shadow: 0px 2px 4px grey;
+}
+#carouselExampleCaptions-3{
+    width: 500px;
+    box-shadow: 0px 2px 4px grey;
+}
+#carouselExampleCaptions-4{
+    width: 500px;
+    box-shadow: 0px 2px 4px grey;
+}
+#carouselExampleCaptions-5{
+    width: 500px;
+    box-shadow: 0px 2px 4px grey;
+}
+#carouselExampleCaptions-6{
+    width: 500px;
+    box-shadow: 0px 2px 4px grey;
+}
+.a{
+    margin: 0 auto;
+}
+.b{
+    margin: 0 auto;
+}
+#view-more{
+    margin: 20px auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-shadow: 0px 2px 4px grey;
+}
+.block{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+/************************************* disclaimer *******************************/
+details{
+    font-size: 20px;
+    padding: 10px 130px 10px 130px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+}
+details p{
+    font-size: 18px;
+    margin-left: 20px;
+}
+/***************************************** footer *******************************/
+.footer{
+    background-color: #ffc107;
+    margin-top: 50px;
+    width: 100%;
+}
+.abc{
+    padding: 20px 0px 10px 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+#copy-right:hover{
+    text-decoration: underline;
+}
+.abc:hover{
+    text-decoration: underline;
+}
+.footer #foot-links{
+    display: flex;
+    margin-left: 50px
+}
+.footer .social{
+    float: right;
+    font-size: 28px;
+    padding: 30px;
+    margin-right: 80px;
+}
+.footer .social a{
+    opacity: 0.8;
+    padding-left: 40px;
+}
+.footer .social a:hover{
+    opacity: 1;
+}
+/***************************************** city-wise-hostels *****************************/
+.hstl{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img{
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.hstl .info{
+    height: 200px;
+    width: 500px;
+    padding: 20px;
+    overflow: scroll;
+}
+.info::-webkit-scrollbar{
+    width: 0px;
+}
+/******************************************* contact *****************************/
+#forms{
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffc107;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+.left{
+    padding: 20px;
+}
+.right{
+    padding: 20px;
+}
+
+#forms #input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+#forms label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.faq{
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 70%;
+    border-radius: 10px;
+    padding: 30px 50px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.faq details{
+    padding: 5px 20px;
+    text-align: justify;
+}
+.faq details p{
+    font-size: 14px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 0px 10px;
+}
+.details{
+    text-align: left;
+    padding: 30px 0px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/******************************************** my account ***************************/
+#account-input{
+    display: none;
+}
+.account-main{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 55%;
+    padding: 40px 70px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.account-info{
+    display: flex;
+}
+#div-1{
+    font-size: 70px;
+    padding: 10px;
+    color: #807878;
+}
+#div-2{
+    padding: 16px;
+}
+#div-2 h1{
+    font-size: 46px;
+    color: #ffc107;
+}
+#act-details{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+#act-details p{
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 5px;
+}
+#act-details span{
+    color: #807878;
+    font-weight: normal;
+}
+#another{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#account-input{
+    padding: 30px 40px 0px 40px;
+}
+#account-input label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+#account-input input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+#submit-button{
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

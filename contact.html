@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="hostel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-contain">
+        <div class="header">
+          <!-- <h1>hostelzilla</h1> -->
+        </div>
+        <!-------------------------------------------- navbar ----------------------------------->
+        <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp" alt="Hostelzilla logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Available cities
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">Bengaluru</a></li>
+                      <li><a class="dropdown-item">Ahmedabad</a></li>
+                      <li><a class="dropdown-item">Hyderabad</a></li>
+                      <li><a class="dropdown-item">Delhi</a></li>
+                      <li><a class="dropdown-item">Vishakapatnam</a></li>
+                      <li><a class="dropdown-item">Mumbai</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+        <!----------------------------------------- main fontainer ------------------------->
+        <div class="contact">
+            <form action="process.php" id="forms">
+                <div class="left">
+                <p>
+                    <label for="">First Name</label>
+                    <input id="input" type="text">
+                </p>
+
+                <p>
+                    <label for="">Last Name</label>
+                    <input id="input" type="text">
+                </p>
+
+                <p>
+                    <label for="">Email</label>
+                    <input id="input" type="email">
+                </p>
+
+                <p>
+                    <label for="">Ph no.</label>
+                    <input id="input" type="number">
+                </p>
+            </div>
+
+                <div class="right">
+                <p>
+                    <label for="purpose">Purpose</label>
+                    <select id="input" name="Purpose" id="">
+                        <option value="">Select</option>
+                        <option value="">Payment issues</option>
+                        <option value="">Query about discounts</option>
+                        <option value="">issues with the website features</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="">Message</label>
+                    <textarea name="message" id="input" cols="30" rows="5"></textarea>
+                </p>
+
+                <p>
+                    <button id="input" class="btn btn-light">Submit</button>
+                </p>
+            </div>
+
+            </form>
+        </div>
+        <!----------------------------------------- faq and contact ------------------------------>
+        <div class="faq">
+            <h3 style="padding-bottom: 20px">FAQ and contact details</h3>
+            <details>
+                <summary>First question</summary>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, delectus! At eos distinctio repudiandae? Atque voluptatem delectus nulla, facere, debitis quibusdam in quae voluptatibus illo consequuntur id, eius inventore eum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, incidunt veritatis? Totam nobis nisi consequatur perspiciatis. Laborum animi similique expedita, minus ipsum ipsa voluptatum, ducimus sunt inventore facere culpa veritatis!
+                </p>
+            </details>
+            <hr style="margin: 2px 0px 2px 40px">
+            <details>
+                <summary>Second question</summary>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, delectus! At eos distinctio repudiandae? Atque voluptatem delectus nulla, facere, debitis quibusdam in quae voluptatibus illo consequuntur id, eius inventore eum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum, facere quasi amet blanditiis accusantium at, libero voluptas optio aliquid consectetur fugiat. Ipsum, eaque ex mollitia ad nobis officiis quidem.
+                </p>
+            </details>
+            <hr style="margin: 2px 0px 2px 40px">
+            <details>
+                <summary>Third question</summary>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, delectus! At eos distinctio repudiandae? Atque voluptatem delectus nulla, facere, debitis quibusdam in quae voluptatibus illo consequuntur id, eius inventore eum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex tenetur repellat, id perspiciatis, voluptas cum non provident vitae illum delectus. Quisquam delectus, eum saepe nulla deleniti aliquid. Eveniet, reiciendis.
+                </p>
+            </details>
+            <hr style="margin: 2px 0px 2px 40px">
+            <div class="details">
+                <p><i class="fa-solid fa-envelope"></i> Email : hostelzilla.in@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+                <p><i class="fa-solid fa-phone"></i> Ph no. : 9876543210</p>
+            </div>
+        </div>
+        <!-------------------------------------------- footer ------------------------->
+        <div class="footer">
+            <div class="social">
+              <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+            </div>
+            <div class="abc">
+              <a style="margin-left: 50px;">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group name)</a>
+            </div>
+       
+            <div id="foot-links">
+              <p class="abc">Cookies</p>
+              <p class="abc">Data protection</p>
+              <p class="abc">Legal Notice</p>
+              <p class="abc">Pay by link</p>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

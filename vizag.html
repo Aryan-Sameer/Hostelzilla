@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishakapatnam</title>
+    <link rel="stylesheet" href="hostel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="hostel.js"></script>
+</head>
+<body>
+  <div class="main-contain">
+    <div class="header">
+        <!-- <h1>hostelzilla</h1> -->
+    </div>
+      <!-------------------------------------------- navbar ----------------------------------->
+      <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp" alt="Hostelzilla logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Available cities
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Bengaluru</a></li>
+                  <li><a class="dropdown-item">Ahmedabad</a></li>
+                  <li><a class="dropdown-item">Hyderabad</a></li>
+                  <li><a class="dropdown-item">Delhi</a></li>
+                  <li><a class="dropdown-item">Vishakapatnam</a></li>
+                  <li><a class="dropdown-item">Mumbai</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+       <!------------------------------------------- checkbox ----------------------------->
+    <input id="check" type="checkbox">
+    <label for="check">
+        <i class="fa-solid fa-bars" id="open"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </label>
+    <!-------------------------------------------- side bar --------------------------------->
+    <div class="menu">
+      <ul>
+        <div class="head">
+          <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i><h4>My Account</h4></a> 
+        </div>
+          <hr style="color: grey; width: 80%;">
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Preferences</a></li>
+          <li><a href="#">Hostels in your location</a></li>
+          <li><a href="#">Deals and offers</a></li><hr style="color: grey; width: 80%;">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Send Feedback</a></li>
+          <li><a href="#">Settings</a></li><hr style="color: grey; width: 80%;">
+          <li><a href="#">Logout</a></li>
+      </ul>
+  </div>
+  <!--------------------------------- hostels ---------------------------->
+
+      <h1 align="center" style="padding: 40px 0px 0px 30px;">Welcome to Vishakapatnam!</h1>
+      <div class="hstl">                                                         <!----- first hstl ----->
+        <img class="img" src="images/vizag/1.jpg" width="350px" height="200px" alt="hostel-1"> 
+          <div class="info">
+
+            <h5>Vyasa Student Hostel</h5>
+            <p><b>Address:</b> Vysya Student's Hostel, #14-11-2, Dandubazar, Maharanipeta, Visakhapatnam 530002</p>
+            <b>Facilities:</b>
+            <ul>
+                <li>well furnished and spacious rooms</li>
+                <li>AC and non-AC rooms available</li>
+                <li>1, 2, 3, 4 sharing rooms</li>
+                <li>high speed wifi</li>
+                <li>hygenic food (veg and non-veg)</li>
+                <li>Parking available</li>
+                <li>well maintained washrooms</li>
+                <li>24/7 water and electricity supply</li>
+            </ul>
+           
+            <p>Super market, bus stand and medical facilities within walkable distance. </p>
+            <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+            <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+            <a target="_blank" href="https://www.google.com/maps/place/17%C2%B042'42.9%22N+83%C2%B018'26.9%22E/@17.7119128,83.3074674,17z/data=!3m1!4b1!4m4!3m3!8m2!3d17.7119128!4d83.3074674?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
+            <button id="marked1" style="margin-left: 30px;" onclick="wish1()" class="btn btn-warning">Wishlist</button>
+
+          </div>
+      </div>
+
+      <div class="hstl">                                                    <!----- second hstl ----->
+        <img class="img" src="images/vizag/2.jpg" width="350px" height="200px" alt="hostel-1">
+        <div class="info">
+                         
+        <h5>Sivaram Boys Hostel</h5>
+        <p><b>Address:</b> Door No 48-8-22, Srinagar, Visakhapatnam - 530016 (Near Raithu Bazar, Mla Complex)</p>
+        <b>Facilities:</b>
+        <ul>
+            <li>well furnished and spacious rooms</li>
+            <li>AC and non-AC rooms available</li>
+            <li>1, 2, 3, 4 sharing rooms</li>
+            <li>high speed wifi</li>
+            <li>hygenic food (veg and non-veg)</li>
+            <li>Parking available</li>
+            <li>well maintained washrooms</li>
+            <li>24/7 water and electricity supply</li>
+        </ul>
+
+        <p>Super market, bus stand and medical facilities within walkable distance. </p>
+        <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+            <a target="_blank" href="https://www.google.com/maps/place/Sivarama+Boys+Hostel/@17.7276102,83.3070848,15z/data=!4m6!3m5!1s0x3a39433b9c7f475f:0x5e56b0d85c26df95!8m2!3d17.7276102!4d83.3070848!16s%2Fg%2F11c37njwsx?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
+            <button id="marked2" style="margin-left: 30px;" onclick="wish2()" class="btn btn-warning">Wishlist</button>
+        </div>
+      </div>
+
+    <div class="hstl">                                                  <!----- third hstl ------->
+      <img class="img" src="images/vizag/3.jpg" width="350px" height="200px" alt="hostel-1">
+      <div class="info">
+                       
+        <h5>Hostel 99</h5>
+        <p><b>Address:</b> Adarsh Nagar Rd, Ushodaya Center, Adarsh Nagar, MVP Colony, Visakhapatnam, Andhra Pradesh 530017</p>
+        <b>Facilities:</b>
+        <ul>
+            <li>well furnished and spacious rooms</li>
+            <li>AC and non-AC rooms available</li>
+            <li>1, 2, 3, 4 sharing rooms</li>
+            <li>high speed wifi</li>
+            <li>hygenic food (veg and non-veg)</li>
+            <li>Parking available</li>
+            <li>well maintained washrooms</li>
+            <li>24/7 water and electricity supply</li>
+        </ul>
+
+        <p>Super market, bus stand and medical facilities within walkable distance. </p>
+        <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+          <a target="_blank" href="https://www.google.com/maps/place/Hostel+99/@17.7352556,83.333004,15z/data=!4m6!3m5!1s0x3a3943276999c287:0xe9f48dd07a0a69de!8m2!3d17.7352556!4d83.333004!16s%2Fg%2F11kv9py3qt?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked3" style="margin-left: 30px;" onclick="wish3()" class="btn btn-warning">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="hstl">                                                       <!---- fourth hstl ----->
+      <img class="img" src="images/vizag/4.jpg" width="350px" height="200px" alt="hostel-1">
+      <div class="info">
+               
+        <h5>DDS Boys Hostel</h5>
+        <p><b>Address:</b>  Q9JF+C9X, Rushikonda, Visakhapatnam, Andhra Pradesh 530045</p>
+        <b>Facilities:</b>
+        <ul>
+            <li>well furnished and spacious rooms</li>
+            <li>AC and non-AC rooms available</li>
+            <li>1, 2, 3, 4 sharing rooms</li>
+            <li>high speed wifi</li>
+            <li>hygenic food (veg and non-veg)</li>
+            <li>Parking available</li>
+            <li>well maintained washrooms</li>
+            <li>24/7 water and electricity supply</li>
+        </ul>
+
+        <p>Super market, bus stand and medical facilities within walkable distance. </p>
+        <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+          <a target="_blank" href="https://www.google.com/maps/place/DDS+BOYS+HOSTEL/@17.7812516,83.3730957,15z/data=!4m6!3m5!1s0x3a395b5dbe4e0921:0xc5dfb058e510433e!8m2!3d17.7812516!4d83.3730957!16s%2Fg%2F11s_v_g2y9?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked4" style="margin-left: 30px;" onclick="wish4()" class="btn btn-warning">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="hstl">                                                <!------- fifth hstl ------->
+      <img class="img" src="images/vizag/5.webp" width="350px" height="200px" alt="hostel-1">
+      <div class="info">
+
+        <h5>Lathasree ladies Hostel</h5>
+        <p><b>Address:</b> 48-17-10/A, 1st Ln, opp. NRI college, RTC Complex, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016</p>
+        <b>Facilities:</b>
+        <ul>
+            <li>well furnished and spacious rooms</li>
+            <li>AC and non-AC rooms available</li>
+            <li>1, 2, 3, 4 sharing rooms</li>
+            <li>high speed wifi</li>
+            <li>hygenic food (veg and non-veg)</li>
+            <li>Parking available</li>
+            <li>well maintained washrooms</li>
+            <li>24/7 water and electricity supply</li>
+        </ul>
+
+        <p>Super market, bus stand and medical facilities within walkable distance. </p>
+        <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+          <a target="_blank" href="https://www.google.com/maps/place/Lathasree+ladies+hostel/@17.7256786,83.3082839,15z/data=!4m2!3m1!1s0x0:0xf6a761f289094ad1?sa=X&ved=2ahUKEwjErcGeirKAAxWa3jgGHSKJDQsQ_BJ6BAg_EAA&ved=2ahUKEwjErcGeirKAAxWa3jgGHSKJDQsQ_BJ6BAhGEAg"><button id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked5" style="margin-left: 30px;" onclick="wish5()" class="btn btn-warning">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="hstl">                                                  <!------ sixth hstl ------->
+      <img class="img" src="images/vizag/6.jpg" width="350px" height="200px" alt="hostel-1">
+      <div class="info">
+
+        <h5>SNR ladies Hostel</h5>
+        <p><b>Address:</b>  D.NO, 10-6-6, Nowroji Rd, Daspalla Hills, Maharani Peta, Visakhapatnam, Andhra Pradesh 530002</p>
+        <b>Facilities:</b>
+        <ul>
+            <li>well furnished and spacious rooms</li>
+            <li>AC and non-AC rooms available</li>
+            <li>1, 2, 3, 4 sharing rooms</li>
+            <li>high speed wifi</li>
+            <li>hygenic food (veg and non-veg)</li>
+            <li>Parking available</li>
+            <li>well maintained washrooms</li>
+            <li>24/7 water and electricity supply</li>
+        </ul>
+ 
+        <p>Super market, bus stand and medical facilities within walkable distance. </p>
+        <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+          <a target="_blank" href="https://www.google.com/search?rlz=1C1CHBD_enIN919IN919&tbs=lf:1,lf_ui:2&tbm=lcl&q=girls+hostels+in++vizag&rflfq=1&num=10&sa=X&ved=2ahUKEwiLoYfMirKAAxU-jGMGHbjuCiQQjGp6BAgkEAE&biw=1366&bih=657&dpr=1#rlfi=hd:;si:8805858351115828776,l,ChdnaXJscyBob3N0ZWxzIGluICB2aXphZ0jh5bGC97iAgAhaIhAAEAEYABgBGAMiFmdpcmxzIGhvc3RlbHMgaW4gdml6YWeSARV3b3JraW5nX3dvbWVuc19ob3N0ZWyqAVIQASoRIg1naXJscyBob3N0ZWxzKAAyHxABIhvuhLhKQsJ7o6qiPlpPWUkOiWTAdvZtdQZPWRkyGhACIhZnaXJscyBob3N0ZWxzIGluIHZpemFn;mv:[[17.7696596,83.3628487],[17.7116302,83.304357]]"><button id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked6" style="margin-left: 30px;" onclick="wish6()" class="btn btn-warning">Wishlist</button>
+      </div>
+    </div>
+
+  <!--------------------------------------------- footer ----------------------------->
+  <div class="footer">
+    <div class="social">
+      <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
+      <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+      <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+      <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+    </div>
+    <div class="abc">
+      <a style="margin-left: 50px;">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group name)</a>
+    </div>
+
+    <div id="foot-links">
+      <p class="abc">Cookies</p>
+      <p class="abc">Data protection</p>
+      <p class="abc">Legal Notice</p>
+      <p class="abc">Pay by link</p>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
