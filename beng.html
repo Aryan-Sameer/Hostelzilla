@@ -1,125 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bengaluru</title>
-    <link rel="stylesheet" href="hostel.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="hostel.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bengaluru</title>
+  <link rel="stylesheet" href="hostel.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <div class="main-contain">
     <div class="header">
-        <!-- <h1>hostelzilla</h1> -->
+      <!-- <h1>hostelzilla</h1> -->
     </div>
-      <!-------------------------------------------- navbar ----------------------------------->
-      <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp" alt="Hostelzilla logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Available cities
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item">Bengaluru</a></li>
-                  <li><a class="dropdown-item">Ahmedabad</a></li>
-                  <li><a class="dropdown-item">Hyderabad</a></li>
-                  <li><a class="dropdown-item">Delhi</a></li>
-                  <li><a class="dropdown-item">Vishakapatnam</a></li>
-                  <li><a class="dropdown-item">Mumbai</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
+    <!-------------------------------------------- navbar ----------------------------------->
+    <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp"
+            alt="Hostelzilla logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Available cities
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Bengaluru</a></li>
+                <li><a class="dropdown-item">Ahmedabad</a></li>
+                <li><a class="dropdown-item">Hyderabad</a></li>
+                <li><a class="dropdown-item">Delhi</a></li>
+                <li><a class="dropdown-item">Vishakapatnam</a></li>
+                <li><a class="dropdown-item">Mumbai</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-       <!------------------------------------------- checkbox ----------------------------->
+      </div>
+    </nav>
+    <!------------------------------------------- checkbox ----------------------------->
     <input id="check" type="checkbox">
     <label for="check">
-        <i class="fa-solid fa-bars" id="open"></i>
-        <i class="fa-solid fa-xmark" id="close"></i>
+      <i class="fa-solid fa-bars" id="open"></i>
+      <i class="fa-solid fa-xmark" id="close"></i>
     </label>
     <!-------------------------------------------- side bar --------------------------------->
     <div class="menu">
       <ul>
+        <div class="head">
           <div class="head">
-            <div class="head">
-              <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i><h4>My Account</h4></a> 
-            </div>
+            <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i>
+              <h4>My Account</h4>
+            </a>
           </div>
-          <hr style="color: grey; width: 80%;">
-          <li><a href="#">Wishlist</a></li>
-          <li><a href="#">Preferences</a></li>
-          <li><a href="#">Hostels in your location</a></li>
-          <li><a href="#">Deals and offers</a></li><hr style="color: grey; width: 80%;">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Help & Support</a></li>
-          <li><a href="#">Send Feedback</a></li>
-          <li><a href="#">Settings</a></li><hr style="color: grey; width: 80%;">
-          <li><a href="#">Logout</a></li>
+        </div>
+        <hr style="color: grey; width: 80%;">
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Preferences</a></li>
+        <li><a href="#">Hostels in your location</a></li>
+        <li><a href="#">Deals and offers</a></li>
+        <hr style="color: grey; width: 80%;">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Send Feedback</a></li>
+        <li><a href="#">Settings</a></li>
+        <hr style="color: grey; width: 80%;">
+        <li><a href="#">Logout</a></li>
       </ul>
-  </div>
-  <!--------------------------------- hostels ---------------------------->
+    </div>
+    <!--------------------------------- hostels ---------------------------->
 
-      <h1 align="center" style="padding: 40px 0px 0px 30px;">Welcome to Bengaluru!</h1>  
-      <div class="hstl">                                                            <!----- first hstl ----->
-        <img class="img" src="images/bengaluru/salzburg house.jpg" width="350px" height="200px" alt="hostel-1">  
-          <div class="info">
+    <h1 align="center" style="padding: 40px 0px 0px 0px;">Welcome to Bengaluru!</h1>
 
-              <h5>Salzburd House</h5>
-              <p><b>Address:</b> #55, 1st Main Rd, Tavarekere, Venkateshwara Layout, S.G. Palya, Bengaluru, Karnataka 560029</p>
-              <b>Facilities:</b>
-              <ul>
-                  <li>well furnished and spacious rooms</li>
-                  <li>AC and non-AC rooms available</li>
-                  <li>1, 2, 3, 4 sharing rooms</li>
-                  <li>high speed wifi</li>
-                  <li>hygenic food (veg and non-veg)</li>
-                  <li>Parking available</li>
-                  <li>well maintained washrooms</li>
-                  <li>24/7 water and electricity supply</li>
-              </ul>
- 
-              <p>Super market, bus stand and medical facilities within walkable distance. </p>
-              <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
-              <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+    <div class="main">
 
-              <a target="_blank" href="https://www.google.com/maps/place/Stanza+Living+Salzburg+House/@12.9310848,77.6087012,15z/data=!4m6!3m5!1s0x3bae15c48c516fbb:0xa1c40892efb5fca8!8m2!3d12.9310848!4d77.6087012!16s%2Fg%2F11jnxylvrn?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-              <button id="marked1" style="margin-left: 30px;" onclick="wish1()" class="btn btn-warning">Wishlist</button>
+      <div class="hstl"> <!----- first hstl ----->
+        <img class="img" src="images/bengaluru/salzburg house.jpg" width="350px" height="200px" alt="hostel-1">
+        <div class="info">
 
-          </div>
+          <h5>Salzburd House</h5>
+          <p><b>Address:</b> #55, 1st Main Rd, Tavarekere, Venkateshwara Layout, S.G. Palya, Bengaluru, Karnataka 560029
+          </p>
+          <b>Facilities:</b>
+          <ul>
+            <li>well furnished and spacious rooms</li>
+            <li>AC and non-AC rooms available</li>
+            <li>1, 2, 3, 4 sharing rooms</li>
+            <li>high speed wifi</li>
+            <li>hygenic food (veg and non-veg)</li>
+            <li>Parking available</li>
+            <li>well maintained washrooms</li>
+            <li>24/7 water and electricity supply</li>
+          </ul>
+
+          <p>Super market, bus stand and medical facilities within walkable distance. </p>
+          <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b> <span
+              style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
+          <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+          <a target="_blank"
+            href="https://www.google.com/maps/place/Stanza+Living+Salzburg+House/@12.9310848,77.6087012,15z/data=!4m6!3m5!1s0x3bae15c48c516fbb:0xa1c40892efb5fca8!8m2!3d12.9310848!4d77.6087012!16s%2Fg%2F11jnxylvrn?entry=ttu"><button
+              id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked1" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
+
+        </div>
       </div>
 
-      <div class="hstl">                                                    <!----- second hstl ----->
+      <div class="hstl"> <!----- second hstl ----->
         <img class="img" src="images/bengaluru/hamburg house.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
           <h5>Frankfurt House</h5>
           <p><b>Address:</b> 33,33/1, Christ Ln, Venkateswara Layout, Koramgala, Bangaluru - 560029</p>
           <b>Facilities:</b>
-        <ul>
+          <ul>
             <li>well furnished and spacious rooms</li>
             <li>AC and non-AC rooms available</li>
             <li>1, 2, 3, 4 sharing rooms</li>
@@ -128,26 +143,29 @@
             <li>Parking available</li>
             <li>well maintained washrooms</li>
             <li>24/7 water and electricity supply</li>
-        </ul>
-    
+          </ul>
+
           <p>Super market, bus stand and medical facilities within walkable distance. </p>
-          <p style="word-spacing: 10px;"><b>Fee: 14,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
+          <p style="word-spacing: 10px;"><b>Fee: 14,000/-</b> <span
+              style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
           <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-            <a target="_blank" href="https://www.google.com/maps/place/Stanza+Living+Frankfurt+House/@12.9345097,77.6089814,15z/data=!4m6!3m5!1s0x3bae15d0ff470919:0x3d67029be020c670!8m2!3d12.9345097!4d77.6089814!16s%2Fg%2F11h195bvvj?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-            <button id="marked2" style="margin-left: 30px;" onclick="wish2()" class="btn btn-warning">Wishlist</button>
+          <a target="_blank"
+            href="https://www.google.com/maps/place/Stanza+Living+Frankfurt+House/@12.9345097,77.6089814,15z/data=!4m6!3m5!1s0x3bae15d0ff470919:0x3d67029be020c670!8m2!3d12.9345097!4d77.6089814!16s%2Fg%2F11h195bvvj?entry=ttu"><button
+              id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked2" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
 
         </div>
       </div>
 
-    <div class="hstl">                                                  <!----- third hstl ------->
-      <img class="img" src="images/bengaluru/frankfurt.PNG" width="350px" height="200px" alt="hostel-1">
-      <div class="info">
-          
-        <h5>Hamburg House</h5>
-        <p><b>Address:</b> 3rd floor #43, Sg Palya Main road, Venkateswara layout, sg Palya, Bengaluru-560029</p>
-        <b>Facilities:</b>
-        <ul>
+      <div class="hstl"> <!----- third hstl ------->
+        <img class="img" src="images/bengaluru/frankfurt.PNG" width="350px" height="200px" alt="hostel-1">
+        <div class="info">
+
+          <h5>Hamburg House</h5>
+          <p><b>Address:</b> 3rd floor #43, Sg Palya Main road, Venkateswara layout, sg Palya, Bengaluru-560029</p>
+          <b>Facilities:</b>
+          <ul>
             <li>well furnished and spacious rooms</li>
             <li>AC and non-AC rooms available</li>
             <li>1, 2, 3, 4 sharing rooms</li>
@@ -156,25 +174,28 @@
             <li>Parking available</li>
             <li>well maintained washrooms</li>
             <li>24/7 water and electricity supply</li>
-        </ul>
+          </ul>
 
-        <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 16,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
-        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+          <p>Super market, bus stand and medical facilities within walkable distance. </p>
+          <p style="word-spacing: 10px;"><b>Fee: 16,000/-</b> <span
+              style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
+          <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-          <a target="_blank" href="https://www.google.com/maps/place/Stanza+Living+Hamburg+House/@12.935074,77.6075314,15z/data=!4m6!3m5!1s0x3bae15e4ad97a335:0x60d9d6dce3d5ed57!8m2!3d12.935074!4d77.6075314!16s%2Fg%2F11h71kp00_?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked3" style="margin-left: 30px;" onclick="wish3()" class="btn btn-warning">Wishlist</button>
+          <a target="_blank"
+            href="https://www.google.com/maps/place/Stanza+Living+Hamburg+House/@12.935074,77.6075314,15z/data=!4m6!3m5!1s0x3bae15e4ad97a335:0x60d9d6dce3d5ed57!8m2!3d12.935074!4d77.6075314!16s%2Fg%2F11h71kp00_?entry=ttu"><button
+              id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked3" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
+        </div>
       </div>
-    </div>
 
-    <div class="hstl">                                                       <!---- fourth hstl ----->
-      <img class="img" src="images/bengaluru/4.jpg"  width="350px" height="200px" alt="hostel-1">
-      <div class="info">
-         
-        <h5>Bratislava House</h5>
-        <p><b>Address:</b>47, 3rd Cross Rd, Bhavani Nagar, S.G. Palya, Bengaluru, Karnataka 560029</p>
-        <b>Facilities:</b>
-        <ul>
+      <div class="hstl"> <!---- fourth hstl ----->
+        <img class="img" src="images/bengaluru/4.jpg" width="350px" height="200px" alt="hostel-1">
+        <div class="info">
+
+          <h5>Bratislava House</h5>
+          <p><b>Address:</b>47, 3rd Cross Rd, Bhavani Nagar, S.G. Palya, Bengaluru, Karnataka 560029</p>
+          <b>Facilities:</b>
+          <ul>
             <li>well furnished and spacious rooms</li>
             <li>AC and non-AC rooms available</li>
             <li>1, 2, 3, 4 sharing rooms</li>
@@ -183,25 +204,28 @@
             <li>Parking available</li>
             <li>well maintained washrooms</li>
             <li>24/7 water and electricity supply</li>
-        </ul>
- 
-        <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 10,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">14,000</span></p>
-        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+          </ul>
 
-          <a target="_blank" href="https://www.google.com/maps/place/Stanza+Living+Bratislava+House/@12.9332114,77.6069696,15z/data=!4m2!3m1!1s0x0:0x53263446127fea35?sa=X&ved=2ahUKEwjV9pGl1rGAAxUlY_UHHUV-BDQQ_BJ6BAhOEAA&ved=2ahUKEwjV9pGl1rGAAxUlY_UHHUV-BDQQ_BJ6BAhbEAg"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked4" style="margin-left: 30px;" onclick="wish4()" class="btn btn-warning">Wishlist</button>
+          <p>Super market, bus stand and medical facilities within walkable distance. </p>
+          <p style="word-spacing: 10px;"><b>Fee: 10,000/-</b> <span
+              style="text-decoration: line-through; font-weight: normal;">14,000</span></p>
+          <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+          <a target="_blank"
+            href="https://www.google.com/maps/place/Stanza+Living+Bratislava+House/@12.9332114,77.6069696,15z/data=!4m2!3m1!1s0x0:0x53263446127fea35?sa=X&ved=2ahUKEwjV9pGl1rGAAxUlY_UHHUV-BDQQ_BJ6BAhOEAA&ved=2ahUKEwjV9pGl1rGAAxUlY_UHHUV-BDQQ_BJ6BAhbEAg"><button
+              id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked4" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
+        </div>
       </div>
-    </div>
 
-    <div class="hstl">                                                <!------- fifth hstl ------->
-      <img class="img" src="images/bengaluru/5.jpg"  width="350px" height="200px" alt="hostel-1">
-      <div class="info">
-         
-        <h5>Zolo mitra</h5>
-        <p><b>Address:</b> Koramangla, 20, 20th B Cross Rd, Ejipura, Bengaluru, Karnataka 560047</p>
-        <b>Facilities:</b>
-        <ul>
+      <div class="hstl"> <!------- fifth hstl ------->
+        <img class="img" src="images/bengaluru/5.jpg" width="350px" height="200px" alt="hostel-1">
+        <div class="info">
+
+          <h5>Zolo mitra</h5>
+          <p><b>Address:</b> Koramangla, 20, 20th B Cross Rd, Ejipura, Bengaluru, Karnataka 560047</p>
+          <b>Facilities:</b>
+          <ul>
             <li>well furnished and spacious rooms</li>
             <li>AC and non-AC rooms available</li>
             <li>1, 2, 3, 4 sharing rooms</li>
@@ -210,25 +234,29 @@
             <li>Parking available</li>
             <li>well maintained washrooms</li>
             <li>24/7 water and electricity supply</li>
-        </ul>
- 
-        <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 16,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
-        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+          </ul>
 
-          <a target="_blank" href="https://www.google.com/maps/place/Zolo+Mitra+Co-Living+%7C+Redefining+PG/@12.9435538,77.6289268,15z/data=!4m2!3m1!1s0x0:0x27adc87896bd3e5e?sa=X&ved=2ahUKEwijy6XR1rGAAxUSZfUHHVyGBTUQ_BJ6BAhjEAA&ved=2ahUKEwijy6XR1rGAAxUSZfUHHVyGBTUQ_BJ6BAhwEAg"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked5" style="margin-left: 30px;" onclick="wish5()" class="btn btn-warning">Wishlist</button>
+          <p>Super market, bus stand and medical facilities within walkable distance. </p>
+          <p style="word-spacing: 10px;"><b>Fee: 16,000/-</b> <span
+              style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
+          <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
+          <a target="_blank"
+            href="https://www.google.com/maps/place/Zolo+Mitra+Co-Living+%7C+Redefining+PG/@12.9435538,77.6289268,15z/data=!4m2!3m1!1s0x0:0x27adc87896bd3e5e?sa=X&ved=2ahUKEwijy6XR1rGAAxUSZfUHHVyGBTUQ_BJ6BAhjEAA&ved=2ahUKEwijy6XR1rGAAxUSZfUHHVyGBTUQ_BJ6BAhwEAg"><button
+              id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked5" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
+        </div>
       </div>
-    </div>
 
-    <div class="hstl">                                                  <!------ sixth hstl ------->
-      <img class="img" src="images/bengaluru/6.webp"  width="350px" height="200px" alt="hostel-1">
-      <div class="info">
-         
-        <h5>Como House</h5>
-        <p><b>Address:</b> Green Park Apartment, 14, 1st Cross Rd, Tavarekere, Kaveri Layout, Jayanagar, Bengaluru, Karnataka 560029</p>
-        <b>Facilities:</b>
-        <ul>
+      <div class="hstl"> <!------ sixth hstl ------->
+        <img class="img" src="images/bengaluru/6.webp" width="350px" height="200px" alt="hostel-1">
+        <div class="info">
+
+          <h5>Como House</h5>
+          <p><b>Address:</b> Green Park Apartment, 14, 1st Cross Rd, Tavarekere, Kaveri Layout, Jayanagar, Bengaluru,
+            Karnataka 560029</p>
+          <b>Facilities:</b>
+          <ul>
             <li>well furnished and spacious rooms</li>
             <li>AC and non-AC rooms available</li>
             <li>1, 2, 3, 4 sharing rooms</li>
@@ -237,36 +265,41 @@
             <li>Parking available</li>
             <li>well maintained washrooms</li>
             <li>24/7 water and electricity supply</li>
-        </ul>
+          </ul>
 
-        <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 14,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
-        <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+          <p>Super market, bus stand and medical facilities within walkable distance. </p>
+          <p style="word-spacing: 10px;"><b>Fee: 14,000/-</b> <span
+              style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
+          <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-          <a target="_blank" href="https://www.google.com/maps/place/Stanza+Living+Como+House/@12.9338855,77.610091,15z/data=!4m6!3m5!1s0x3bae15bf91c00e3b:0x869b984570ac9fea!8m2!3d12.9338855!4d77.610091!16s%2Fg%2F11fnp89gkb?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked6" style="margin-left: 30px;" onclick="wish6()" class="btn btn-warning">Wishlist</button>
+          <a target="_blank"
+            href="https://www.google.com/maps/place/Stanza+Living+Como+House/@12.9338855,77.610091,15z/data=!4m6!3m5!1s0x3bae15bf91c00e3b:0x869b984570ac9fea!8m2!3d12.9338855!4d77.610091!16s%2Fg%2F11fnp89gkb?entry=ttu"><button
+              id="location" class="btn btn-warning">View location</button></a>
+          <button id="marked6" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
+        </div>
       </div>
     </div>
 
-  <!--------------------------------------------- footer ----------------------------->
-  <div class="footer">
-    <div class="social">
-      <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
-      <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
-      <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
-      <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+    <!--------------------------------------------- footer ----------------------------->
+    <div class="footer">
+      <div class="abc">
+        <a id="copy-right">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group
+          name)</a>
+        <div class="social">
+          <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
+          <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+          <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+          <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+        </div>
+      </div>
+  
+      <div id="foot-links">
+        <p class="abc">Cookies</p>
+        <p class="abc">Data protection</p>
+        <p class="abc">Legal Notice</p>
+        <p class="abc">Pay by link</p>
+      </div>
     </div>
-    <div class="abc">
-      <a style="margin-left: 50px;">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group name)</a>
-    </div>
-
-    <div id="foot-links">
-      <p class="abc">Cookies</p>
-      <p class="abc">Data protection</p>
-      <p class="abc">Legal Notice</p>
-      <p class="abc">Pay by link</p>
-    </div>
-  </div>
-  </div>
 </body>
+<script src="hostel.js"></script>
 </html>

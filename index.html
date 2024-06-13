@@ -1,146 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hostelzilla</title>
-    <link rel="stylesheet" href="hostel.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostelzilla</title>
+  <link rel="stylesheet" href="hostel.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <div class="main-contain">
-      <div class="header">
-        <!-- <h1>hostelzilla</h1> -->
-      </div>
-      <!-------------------------------------------- navbar ----------------------------------->
-      <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp" alt="Hostelzilla logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Available cities
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-item"><a href="#bangalore">Bengaluru</a></li>
-                  <li class="dropdown-item"><a href="#ahmedabad">Ahmedabad</a></li>
-                  <li class="dropdown-item"><a href="#hyderabad">Hyderabad</a></li>
-                  <li class="dropdown-item"><a href="#delhi">Delhi</a></li>
-                  <li class="dropdown-item"><a href="#mumbai">Mumbai</a></li>
-                  <li class="dropdown-item"><a href="#vizag">Vishakapatnam</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+  <div class="header">
+    <!-- <h1>hostelzilla</h1> -->
+  </div>
+  <!-------------------------------------------- navbar ----------------------------------->
+  <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp"
+          alt="Hostelzilla logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Available cities
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#bangalore">Bengaluru</a></li>
+              <li class="dropdown-item"><a href="#ahmedabad">Ahmedabad</a></li>
+              <li class="dropdown-item"><a href="#hyderabad">Hyderabad</a></li>
+              <li class="dropdown-item"><a href="#delhi">Delhi</a></li>
+              <li class="dropdown-item"><a href="#mumbai">Mumbai</a></li>
+              <li class="dropdown-item"><a href="#vizag">Vishakapatnam</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!------------------------------------------- checkbox ----------------------------->
-    <input id="check" type="checkbox">
-    <label for="check">
-        <i class="fa-solid fa-bars" id="open"></i>
-        <i class="fa-solid fa-xmark" id="close"></i>
-    </label>
-    <!-------------------------------------------- side bar --------------------------------->
-    <div class="menu">
-        <ul>
-            <div class="head">
-              <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i><h4>My Account</h4></a> 
-            </div>
-
-            <hr style="color: grey; width: 80%;">
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Preferences</a></li>
-            <li><a href="#">Hostels in your location</a></li>
-            <li><a href="#">Deals and offers</a></li><hr style="color: grey; width: 80%;">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Help & Support</a></li>
-            <li><a href="#">Send Feedback</a></li>
-            <li><a href="#">Settings</a></li><hr style="color: grey; width: 80%;">
-            <li><a href="#">Logout</a></li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
-    </div>
-      <!--------------------------------------------- slogan ----------------------------->
-      <div id="slogan" align="center">
-        <h3>Find a home away from your home!</h3>
-        <p>Welcome to Hostelzilla, your ultimate destination for finding the perfect hostel or PG to stay during your travels! Whether you're a backpacker exploring new cities, a student in search of affordable accommodation, or a digital nomad looking for a comfortable place to call home, Hostelzilla has got you covered. Our user-friendly platform allows you to search for hostels and PGs based on your preferred location, budget, and amenities. <br>
-        Say goodbye to the hassle of searching countless websites - Hostelzilla simplifies the process, making your travel planning experience smooth and enjoyable. Find your ideal hostel or PG with ease, and embark on unforgettable journeys, creating memories that last a lifetime!</p>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
       </div>
-      <!---------------------------------------------- ALL HOSTELS --------------------------->
+    </div>
+  </nav>
+  <!------------------------------------------- checkbox ----------------------------->
+  <input id="check" type="checkbox">
+  <label for="check">
+    <i class="fa-solid fa-bars" id="open"></i>
+    <i class="fa-solid fa-xmark" id="close"></i>
+  </label>
+  <!-------------------------------------------- side bar --------------------------------->
+  <div class="menu">
+    <ul>
+      <div class="head">
+        <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i>
+          <h4>My Account</h4>
+        </a>
+      </div>
 
-      <div class="block">
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">Wishlist</a></li>
+      <li><a href="#">Preferences</a></li>
+      <li><a href="#"> your location</a></li>
+      <li><a href="#">Deals and offers</a></li>
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Send Feedback</a></li>
+      <li><a href="#">Settings</a></li>
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+  <!--------------------------------------------- slogan ----------------------------->
+  <div id="slogan" align="center">
+    <h3>Find a home away from your home!</h3>
+    <p>Welcome to Hostelzilla, your ultimate destination for finding the perfect hostel or PG to stay during your
+      travels! Whether you're a backpacker exploring new cities, a student in search of affordable accommodation, or a
+      digital nomad looking for a comfortable place to call home, Hostelzilla has got you covered. Our user-friendly
+      platform allows you to search for hostels and PGs based on your preferred location, budget, and amenities. <br>
+      Say goodbye to the hassle of searching countless websites - Hostelzilla simplifies the process, making your
+      travel planning experience smooth and enjoyable. Find your ideal hostel or PG with ease, and embark on
+      unforgettable journeys, creating memories that last a lifetime!</p>
+  </div>
+  <!---------------------------------------------- ALL HOSTELS --------------------------->
+
+  <div class="main">
+
+    <div class="block">
       <!---------------------------bengaluru---------------------------->
       <div class="a">
-          <h1 id="bangalore">Hostels in Bengaluru</h1>
+        <h1 id="bangalore"> Bengaluru</h1>
         <div id="carouselExampleCaptions-1" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/bengaluru/hamburg house.jpg" class="d-block w-100" alt="Frankfurt House">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Frankfurt House</h5>
-                  <p>33,33/1, Christ Ln, Venkateswara Layout, Koramgala, Bangaluru - 560029</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/bengaluru/frankfurt.PNG" class="d-block w-100" alt="Hamburg House">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Hamburg House</h5>
-                  <p>3rd floor #43, Sg Palya Main road, Venkateswara layout, sg Palya, Bengaluru-560029</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/bengaluru/salzburg house.jpg" class="d-block w-100" alt="Salzburg House">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Salzburg House</h5>
-                  <p>Salzburg house, #55, 1st Main Road, venkateshwara alyout, Suddagunte Payal, Bangalore</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
-          <a href="beng.html"><button id="view-more" class="btn btn-warning">View More</button></a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/bengaluru/hamburg house.jpg" class="d-block w-100" alt="Frankfurt House">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Frankfurt House</h5>
+                <p>33,33/1, Christ Ln, Venkateswara Layout, Koramgala, Bangaluru - 560029</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bengaluru/frankfurt.PNG" class="d-block w-100" alt="Hamburg House">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hamburg House</h5>
+                <p>3rd floor #43, Sg Palya Main road, Venkateswara layout, sg Palya, Bengaluru-560029</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bengaluru/salzburg house.jpg" class="d-block w-100" alt="Salzburg House">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Salzburg House</h5>
+                <p>Salzburg house, #55, 1st Main Road, venkateshwara alyout, Suddagunte Payal, Bangalore</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <a href="beng.html"><button id="view-more" class="btn btn-warning">View More</button></a>
       </div>
 
       <!-------------------------------------- ahmedabad ------------------------------------->
 
       <div class="b">
-        <h1 id="ahmedabad">Hostels in Ahmedabad</h1>
+        <h1 id="ahmedabad"> Ahmedabad</h1>
         <div id="carouselExampleCaptions-2" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -165,11 +187,13 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-2"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-2" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-2"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -177,18 +201,21 @@
         <a href="ahmed.html"><button id="view-more" class="btn btn-warning">View More</button></a>
       </div>
     </div>
-      <hr style="width: 80%; margin: 50px 130px 20px 130px;">
+    <hr style="width: 100%; margin: 50px 0px 20px 0px;">
 
-      <!---------------------------------------- hyderabad ---------------------------->
+    <!---------------------------------------- hyderabad ---------------------------->
 
-      <div class="block">
+    <div class="block">
       <div class="a">
-        <h1 id="hyderabad">Hostels in Hyderabad</h1>
+        <h1 id="hyderabad"> Hyderabad</h1>
         <div id="carouselExampleCaptions-3" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -213,11 +240,13 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-3"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-3" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-3"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -228,12 +257,15 @@
       <!------------------------------------------ Delhi ---------------------------->
 
       <div class="b">
-        <h1 id="delhi">Hostels in Delhi</h1>
+        <h1 id="delhi"> Delhi</h1>
         <div id="carouselExampleCaptions-4" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -258,11 +290,13 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-4"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-4"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -270,18 +304,21 @@
         <a href="delhi.html"><button id="view-more" class="btn btn-warning">View More</button></a>
       </div>
     </div>
-    <hr style="width: 80%; margin: 50px 130px 20px 130px;">
+    <hr style="width: 100%; margin: 50px 0px 20px 0px;">
 
-      <div class="block">
+    <div class="block">
       <!------------------------------------------- Mumbai ------------------------------>
 
       <div class="a">
-        <h1 id="mumbai">Hostels in Mumbai</h1>
+        <h1 id="mumbai"> Mumbai</h1>
         <div id="carouselExampleCaptions-5" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -295,7 +332,8 @@
               <img src="images/mumbai/c.jpg" class="d-block w-100" alt="Dolphin by hive PG/Hostel">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Dolphin by hive PG/Hostel</h5>
-                <p>Building, Plot No. 22, 101, Victory, N S Rd Number 5, Vile Parle West, Mumbai, Maharashtra 4000562</p>
+                <p>Building, Plot No. 22, 101, Victory, N S Rd Number 5, Vile Parle West, Mumbai, Maharashtra 4000562
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -306,11 +344,13 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-5"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-5" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-5"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -321,12 +361,15 @@
       <!--------------------------------------- vizag ------------------------------>
 
       <div class="b">
-        <h1 id="vizag">Hostles in Vishakapatnam</h1>
+        <h1 id="vizag"> Vishakapatnam</h1>
         <div id="carouselExampleCaptions-6" class="carousel slide">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -351,11 +394,13 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-6"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-6" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-6"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -363,35 +408,38 @@
         <a href="vizag.html"><button id="view-more" class="btn btn-warning">View More</button></a>
       </div>
     </div>
-      <!-----------------------------------------disclaimer ------------------------------->
-      <div class="disclaimer">
-        <hr style="margin: 50px 130px 0px 150px;">
-        <details>
-          <summary>Legal disclaimers and annotations</summary>
-          <br>
-          <p>The prices specified herein are indicative and may not be final. The indicated price may differ.Hostelzilla shall not be responsible or liable to compensate for the difference in the prices due to aforesaid. Actual look and infrastructure of the hostels and rooms may differ from those shown in pictures.</p>
-        </details>
-        <hr style="margin: 0px 130px 0px 150px;">
-      </div>
-    <!--------------------------------------------- footer ----------------------------->
-    <div class="footer">
+    <!-----------------------------------------disclaimer ------------------------------->
+    <div class="disclaimer">
+      <hr>
+      <details>
+        <summary>Legal disclaimers and annotations</summary>
+        <p>The prices specified herein are indicative and may not be final. The indicated price may differ.Hostelzilla
+          shall not be responsible or liable to compensate for the difference in the prices due to aforesaid. Actual
+          look and infrastructure of the hostels and rooms may differ from those shown in pictures.</p>
+      </details>
+      <hr>
+    </div>
+  </div>
+  <!--------------------------------------------- footer ----------------------------->
+  <div class="footer">
+    <div class="abc">
+      <a id="copy-right">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group
+        name)</a>
       <div class="social">
         <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
         <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
         <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
         <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
       </div>
-      <div class="abc">
-        <a style="margin-left: 50px;">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group name)</a>
-      </div>
- 
-      <div id="foot-links">
-        <p class="abc">Cookies</p>
-        <p class="abc">Data protection</p>
-        <p class="abc">Legal Notice</p>
-        <p class="abc">Pay by link</p>
-      </div>
+    </div>
+
+    <div id="foot-links">
+      <p class="abc">Cookies</p>
+      <p class="abc">Data protection</p>
+      <p class="abc">Legal Notice</p>
+      <p class="abc">Pay by link</p>
     </div>
   </div>
 </body>
+
 </html>

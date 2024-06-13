@@ -1,262 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmedabad</title>
-    <link rel="stylesheet" href="hostel.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="hostel.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmedabad</title>
+  <link rel="stylesheet" href="hostel.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <div class="main-contain">
-    <div class="header">
-        <!-- <h1>hostelzilla</h1> -->
-    </div>
-      <!-------------------------------------------- navbar ----------------------------------->
-      <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp" alt="Hostelzilla logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Available cities
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item">Bengaluru</a></li>
-                  <li><a class="dropdown-item">Ahmedabad</a></li>
-                  <li><a class="dropdown-item">Hyderabad</a></li>
-                  <li><a class="dropdown-item">Delhi</a></li>
-                  <li><a class="dropdown-item">Vishakapatnam</a></li>
-                  <li><a class="dropdown-item">Mumbai</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+
+  <div class="header">
+    <!-- <h1>hostelzilla</h1> -->
+  </div>
+  <!-------------------------------------------- navbar ----------------------------------->
+  <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp"
+          alt="Hostelzilla logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Available cities
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">Bengaluru</a></li>
+              <li><a class="dropdown-item">Ahmedabad</a></li>
+              <li><a class="dropdown-item">Hyderabad</a></li>
+              <li><a class="dropdown-item">Delhi</a></li>
+              <li><a class="dropdown-item">Vishakapatnam</a></li>
+              <li><a class="dropdown-item">Mumbai</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!------------------------------------------- checkbox ----------------------------->
+  <input id="check" type="checkbox">
+  <label for="check">
+    <i class="fa-solid fa-bars" id="open"></i>
+    <i class="fa-solid fa-xmark" id="close"></i>
+  </label>
+  <!-------------------------------------------- side bar --------------------------------->
+  <div class="menu">
+    <ul>
+      <div class="head">
+        <div class="head">
+          <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i>
+            <h4>My Account</h4>
+          </a>
         </div>
-      </nav>
-       <!------------------------------------------- checkbox ----------------------------->
-    <input id="check" type="checkbox">
-    <label for="check">
-        <i class="fa-solid fa-bars" id="open"></i>
-        <i class="fa-solid fa-xmark" id="close"></i>
-    </label>
-    <!-------------------------------------------- side bar --------------------------------->
-    <div class="menu">
-      <ul>
-          <div class="head">
-            <div class="head">
-              <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i><h4>My Account</h4></a> 
-            </div>
-          </div>
-          <hr style="color: grey; width: 80%;">
-          <li><a href="#">Wishlist</a></li>
-          <li><a href="#">Preferences</a></li>
-          <li><a href="#">Hostels in your location</a></li>
-          <li><a href="#">Deals and offers</a></li><hr style="color: grey; width: 80%;">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Help & Support</a></li>
-          <li><a href="#">Send Feedback</a></li>
-          <li><a href="#">Settings</a></li><hr style="color: grey; width: 80%;">
-          <li><a href="#">Logout</a></li>
-      </ul>
+      </div>
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">Wishlist</a></li>
+      <li><a href="#">Preferences</a></li>
+      <li><a href="#">Hostels in your location</a></li>
+      <li><a href="#">Deals and offers</a></li>
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Send Feedback</a></li>
+      <li><a href="#">Settings</a></li>
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">Logout</a></li>
+    </ul>
   </div>
   <!--------------------------------- hostels ---------------------------->
 
-      <h1 align="center" style="padding: 40px 0px 0px 30px;">Welcome to Ahmedabad!</h1>
-      <div class="hstl">                                                   <!----- first hstl ----->
-        <img class="img" src="images/ahmedabad/hstl 2.jpg" width="350px" height="200px" alt="hostel-1">   
-          <div class="info">
+  <h1 align="center" style="padding: 40px 0px 0px 0px;">Welcome to Ahmedabad!</h1>
+
+  <div class="main">
+
+    <div class="hstl"> <!----- first hstl ----->
+      <img class="img" src="images/ahmedabad/hstl 2.jpg" width="350px" height="200px" alt="hostel-1">
+      <div class="info">
 
         <h5>Shree Murlindhar Boys PG</h5>
         <p><b>Address:</b> Evergreen Society, 26/2, Kabir Road, Bopal, Ahmedabad, Gujarat 380058</p>
         <b>Facilities:</b>
         <ul>
-            <li>well furnished and spacious rooms</li>
-            <li>AC and non-AC rooms available</li>
-            <li>1, 2, 3, 4 sharing rooms</li>
-            <li>high speed wifi</li>
-            <li>hygenic food (veg and non-veg)</li>
-            <li>Parking available</li>
-            <li>well maintained washrooms</li>
-            <li>24/7 water and electricity supply</li>
+          <li>well furnished and spacious rooms</li>
+          <li>AC and non-AC rooms available</li>
+          <li>1, 2, 3, 4 sharing rooms</li>
+          <li>high speed wifi</li>
+          <li>hygenic food (veg and non-veg)</li>
+          <li>Parking available</li>
+          <li>well maintained washrooms</li>
+          <li>24/7 water and electricity supply</li>
         </ul>
-  
+
         <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+        <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b> <span
+            style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
         <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-            <a target="_blank" href="https://www.google.com/maps/place/Murlidhar+PG/@23.0340938,72.4566217,15z/data=!4m6!3m5!1s0x395e9b917a98aa0d:0xe835061c7513403!8m2!3d23.0340938!4d72.4566217!16s%2Fg%2F11q5831b_k?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-            <button id="marked1" style="margin-left: 30px;" onclick="wish1()" class="btn btn-warning">Wishlist</button>
+        <a target="_blank"
+          href="https://www.google.com/maps/place/Murlidhar+PG/@23.0340938,72.4566217,15z/data=!4m6!3m5!1s0x395e9b917a98aa0d:0xe835061c7513403!8m2!3d23.0340938!4d72.4566217!16s%2Fg%2F11q5831b_k?entry=ttu"><button
+            id="location" class="btn btn-warning">View location</button></a>
+        <button id="marked1" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
 
-          </div>
       </div>
+    </div>
 
-      <div class="hstl">                                                    <!----- second hstl ----->
-        <img class="img" src="images/ahmedabad/hstl1.jpg" width="350px" height="200px" alt="hostel-1">
-        <div class="info">
-            
+    <div class="hstl"> <!----- second hstl ----->
+      <img class="img" src="images/ahmedabad/hstl1.jpg" width="350px" height="200px" alt="hostel-1">
+      <div class="info">
+
         <h5>NK Boys PG</h5>
         <p><b>Address:</b> 2FHG+MQV, opp. sindhu bhavan, Bopal, Ahmedabad, Gujarat 380058</p>
         <b>Facilities:</b>
         <ul>
-            <li>well furnished and spacious rooms</li>
-            <li>AC and non-AC rooms available</li>
-            <li>1, 2, 3, 4 sharing rooms</li>
-            <li>high speed wifi</li>
-            <li>hygenic food (veg and non-veg)</li>
-            <li>Parking available</li>
-            <li>well maintained washrooms</li>
-            <li>24/7 water and electricity supply</li>
+          <li>well furnished and spacious rooms</li>
+          <li>AC and non-AC rooms available</li>
+          <li>1, 2, 3, 4 sharing rooms</li>
+          <li>high speed wifi</li>
+          <li>hygenic food (veg and non-veg)</li>
+          <li>Parking available</li>
+          <li>well maintained washrooms</li>
+          <li>24/7 water and electricity supply</li>
         </ul>
 
         <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 12,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
+        <p style="word-spacing: 10px;"><b>Fee: 12,000/-</b> <span
+            style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
         <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-            <a target="_blank" href="https://www.google.com/maps/place/N+K+Pg+for+Boys/@23.029246,72.476935,15z/data=!4m6!3m5!1s0x395e9bde9968dbe9:0xedbbfd66a8fffd3f!8m2!3d23.029246!4d72.476935!16s%2Fg%2F11rd4lz2f3?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-            <button id="marked2" style="margin-left: 30px;" onclick="wish2()" class="btn btn-warning">Wishlist</button>
-        </div>
+        <a target="_blank"
+          href="https://www.google.com/maps/place/N+K+Pg+for+Boys/@23.029246,72.476935,15z/data=!4m6!3m5!1s0x395e9bde9968dbe9:0xedbbfd66a8fffd3f!8m2!3d23.029246!4d72.476935!16s%2Fg%2F11rd4lz2f3?entry=ttu"><button
+            id="location" class="btn btn-warning">View location</button></a>
+        <button id="marked2" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
       </div>
+    </div>
 
-    <div class="hstl">                                                  <!----- third hstl ------->
+    <div class="hstl"> <!----- third hstl ------->
       <img class="img" src="images/ahmedabad/hstl3.jpg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
-         
+
         <h5>VS Boys PG</h5>
         <p><b>Address:</b> so. Bhaind udgam school, E 95, Jai Ambe Nagar, Thaltej, Ahmedabad, Gujarat 380059</p>
         <b>Facilities:</b>
         <ul>
-            <li>well furnished and spacious rooms</li>
-            <li>AC and non-AC rooms available</li>
-            <li>1, 2, 3, 4 sharing rooms</li>
-            <li>high speed wifi</li>
-            <li>hygenic food (veg and non-veg)</li>
-            <li>Parking available</li>
-            <li>well maintained washrooms</li>
-            <li>24/7 water and electricity supply</li>
+          <li>well furnished and spacious rooms</li>
+          <li>AC and non-AC rooms available</li>
+          <li>1, 2, 3, 4 sharing rooms</li>
+          <li>high speed wifi</li>
+          <li>hygenic food (veg and non-veg)</li>
+          <li>Parking available</li>
+          <li>well maintained washrooms</li>
+          <li>24/7 water and electricity supply</li>
         </ul>
-    
+
         <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 17,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">20,000</span></p>
+        <p style="word-spacing: 10px;"><b>Fee: 17,000/-</b> <span
+            style="text-decoration: line-through; font-weight: normal;">20,000</span></p>
         <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-          <a target="_blank" href="https://www.google.com/maps/place/V+S+pg/@23.0503058,72.4479675,13z/data=!4m10!1m2!2m1!1sVS+Boys+PG+ahmedabad!3m6!1s0x395e85f2461fab91:0xfa88869f7259dbf4!8m2!3d23.0503077!4d72.5200604!15sChRWUyBCb3lzIFBHIGFobWVkYWJhZJIBFnN0dWRlbnRfaG91c2luZ19jZW50ZXLgAQA!16s%2Fg%2F11f766p6ln?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked3" style="margin-left: 30px;" onclick="wish3()" class="btn btn-warning">Wishlist</button>
+        <a target="_blank"
+          href="https://www.google.com/maps/place/V+S+pg/@23.0503058,72.4479675,13z/data=!4m10!1m2!2m1!1sVS+Boys+PG+ahmedabad!3m6!1s0x395e85f2461fab91:0xfa88869f7259dbf4!8m2!3d23.0503077!4d72.5200604!15sChRWUyBCb3lzIFBHIGFobWVkYWJhZJIBFnN0dWRlbnRfaG91c2luZ19jZW50ZXLgAQA!16s%2Fg%2F11f766p6ln?entry=ttu"><button
+            id="location" class="btn btn-warning">View location</button></a>
+        <button id="marked3" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
 
-    <div class="hstl">                                                       <!---- fourth hstl ----->
+    <div class="hstl"> <!---- fourth hstl ----->
       <img class="img" src="images/ahmedabad/4.jpg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
-         
+
         <h5>Harsidhhi PG/Hostel</h5>
         <p><b>Address:</b> Bopal - Shilaj Rd, Jaldhara1, Bopal, Ahmedabad, Gujarat 380058</p>
         <b>Facilities:</b>
         <ul>
-            <li>well furnished and spacious rooms</li>
-            <li>AC and non-AC rooms available</li>
-            <li>1, 2, 3, 4 sharing rooms</li>
-            <li>high speed wifi</li>
-            <li>hygenic food (veg and non-veg)</li>
-            <li>Parking available</li>
-            <li>well maintained washrooms</li>
-            <li>24/7 water and electricity supply</li>
+          <li>well furnished and spacious rooms</li>
+          <li>AC and non-AC rooms available</li>
+          <li>1, 2, 3, 4 sharing rooms</li>
+          <li>high speed wifi</li>
+          <li>hygenic food (veg and non-veg)</li>
+          <li>Parking available</li>
+          <li>well maintained washrooms</li>
+          <li>24/7 water and electricity supply</li>
         </ul>
 
         <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 12,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
+        <p style="word-spacing: 10px;"><b>Fee: 12,000/-</b> <span
+            style="text-decoration: line-through; font-weight: normal;">15,000</span></p>
         <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-          <a target="_blank" href="https://www.google.com/maps/place/Harsiddhi+PG/@23.0358276,72.4619284,15z/data=!4m6!3m5!1s0x395e9b8c882a3f51:0x73d96d8aca4667a3!8m2!3d23.0358276!4d72.4619284!16s%2Fg%2F11g_x6gd5c?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked4" style="margin-left: 30px;" onclick="wish4()" class="btn btn-warning">Wishlist</button>
+        <a target="_blank"
+          href="https://www.google.com/maps/place/Harsiddhi+PG/@23.0358276,72.4619284,15z/data=!4m6!3m5!1s0x395e9b8c882a3f51:0x73d96d8aca4667a3!8m2!3d23.0358276!4d72.4619284!16s%2Fg%2F11g_x6gd5c?entry=ttu"><button
+            id="location" class="btn btn-warning">View location</button></a>
+        <button id="marked4" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
 
-    <div class="hstl">                                                <!------- fifth hstl ------->
-      <img class="img" src="images/ahmedabad/5.jpg"  width="350px" height="200px" alt="hostel-1">
+    <div class="hstl"> <!------- fifth hstl ------->
+      <img class="img" src="images/ahmedabad/5.jpg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
-           
+
         <h5>Vishal PG/Hostel</h5>
-        <p><b>Address:</b> B, SHAKAMBA TOWERS, 102, Gurukul Rd, Opposite Sterling Hospitals, Nilmani Society, Memnagar, Ahmedabad, Gujarat 380054</p>
+        <p><b>Address:</b> B, SHAKAMBA TOWERS, 102, Gurukul Rd, Opposite Sterling Hospitals, Nilmani Society,
+          Memnagar, Ahmedabad, Gujarat 380054</p>
         <b>Facilities:</b>
         <ul>
-            <li>well furnished and spacious rooms</li>
-            <li>AC and non-AC rooms available</li>
-            <li>1, 2, 3, 4 sharing rooms</li>
-            <li>high speed wifi</li>
-            <li>hygenic food (veg and non-veg)</li>
-            <li>Parking available</li>
-            <li>well maintained washrooms</li>
-            <li>24/7 water and electricity supply</li>
+          <li>well furnished and spacious rooms</li>
+          <li>AC and non-AC rooms available</li>
+          <li>1, 2, 3, 4 sharing rooms</li>
+          <li>high speed wifi</li>
+          <li>hygenic food (veg and non-veg)</li>
+          <li>Parking available</li>
+          <li>well maintained washrooms</li>
+          <li>24/7 water and electricity supply</li>
         </ul>
-    
+
         <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 16,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
+        <p style="word-spacing: 10px;"><b>Fee: 16,000/-</b> <span
+            style="text-decoration: line-through; font-weight: normal;">18,000</span></p>
         <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-          <a target="_blank" href="https://www.google.com/maps/place/Vishal+pg+%7C+Boys+PG+in+Ahmedabad/@23.0492635,72.5322951,15z/data=!4m6!3m5!1s0x395e84af806d7215:0x74aa82eb4826aa03!8m2!3d23.0492635!4d72.5322951!16s%2Fg%2F11cfblgrq?entry=ttu"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked5" style="margin-left: 30px;" onclick="wish5()" class="btn btn-warning">Wishlist</button>
+        <a target="_blank"
+          href="https://www.google.com/maps/place/Vishal+pg+%7C+Boys+PG+in+Ahmedabad/@23.0492635,72.5322951,15z/data=!4m6!3m5!1s0x395e84af806d7215:0x74aa82eb4826aa03!8m2!3d23.0492635!4d72.5322951!16s%2Fg%2F11cfblgrq?entry=ttu"><button
+            id="location" class="btn btn-warning">View location</button></a>
+        <button id="marked5" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
 
-    <div class="hstl">                                                  <!------ sixth hstl ------->
-      <img class="img" src="images/ahmedabad/6.avif"  width="350px" height="200px" alt="hostel-1">
+    <div class="hstl"> <!------ sixth hstl ------->
+      <img class="img" src="images/ahmedabad/6.avif" width="350px" height="200px" alt="hostel-1">
       <div class="info">
-           
+
         <h5>Pritgasu Boys PG/Hostel</h5>
-        <p><b>Address:</b> 10, Maulik Villa Raw House Nr. Panchgini Appartment Baleshwar Mahadev Road, Jodhpur Gam Rd, Satellite, Ahmedabad, Gujarat 380015</p>
+        <p><b>Address:</b> 10, Maulik Villa Raw House Nr. Panchgini Appartment Baleshwar Mahadev Road, Jodhpur Gam Rd,
+          Satellite, Ahmedabad, Gujarat 380015</p>
         <b>Facilities:</b>
         <ul>
-            <li>well furnished and spacious rooms</li>
-            <li>AC and non-AC rooms available</li>
-            <li>1, 2, 3, 4 sharing rooms</li>
-            <li>high speed wifi</li>
-            <li>hygenic food (veg and non-veg)</li>
-            <li>Parking available</li>
-            <li>well maintained washrooms</li>
-            <li>24/7 water and electricity supply</li>
+          <li>well furnished and spacious rooms</li>
+          <li>AC and non-AC rooms available</li>
+          <li>1, 2, 3, 4 sharing rooms</li>
+          <li>high speed wifi</li>
+          <li>hygenic food (veg and non-veg)</li>
+          <li>Parking available</li>
+          <li>well maintained washrooms</li>
+          <li>24/7 water and electricity supply</li>
         </ul>
-  
+
         <p>Super market, bus stand and medical facilities within walkable distance. </p>
-        <p style="word-spacing: 10px;"><b>Fee: 18,000/-</b>  <span style="text-decoration: line-through; font-weight: normal;">20,000</span></p>
+        <p style="word-spacing: 10px;"><b>Fee: 18,000/-</b> <span
+            style="text-decoration: line-through; font-weight: normal;">20,000</span></p>
         <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
 
-          <a target="_blank" href="https://www.google.com/search?sa=X&rlz=1C1CHBD_enIN919IN919&biw=1366&bih=657&tbs=lf:1,lf_ui:2&tbm=lcl&q=Pritgasu+Boys+PG/Hostel+Ahmedabad&rflfq=1&num=10&rldimm=10948895018511969481&ved=2ahUKEwiRotHL3LGAAxWx1zgGHYIKDNAQu9QIegQIHBAM#rlfi=hd:;si:10948895018511969481;mv:[[23.045464,72.5630917],[23.014512399999997,72.5082378]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2"><button id="location" class="btn btn-warning">View location</button></a>
-          <button id="marked6" style="margin-left: 30px;" onclick="wish6()" class="btn btn-warning">Wishlist</button>
+        <a target="_blank"
+          href="https://www.google.com/search?sa=X&rlz=1C1CHBD_enIN919IN919&biw=1366&bih=657&tbs=lf:1,lf_ui:2&tbm=lcl&q=Pritgasu+Boys+PG/Hostel+Ahmedabad&rflfq=1&num=10&rldimm=10948895018511969481&ved=2ahUKEwiRotHL3LGAAxWx1zgGHYIKDNAQu9QIegQIHBAM#rlfi=hd:;si:10948895018511969481;mv:[[23.045464,72.5630917],[23.014512399999997,72.5082378]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2"><button
+            id="location" class="btn btn-warning">View location</button></a>
+        <button id="marked6" style="margin-left: 30px;" class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
+  </div>
 
   <!--------------------------------------------- footer ----------------------------->
   <div class="footer">
-    <div class="social">
-      <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
-      <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
-      <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
-      <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
-    </div>
     <div class="abc">
-      <a style="margin-left: 50px;">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group name)</a>
+      <a id="copy-right">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group
+        name)</a>
+      <div class="social">
+        <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+      </div>
     </div>
 
     <div id="foot-links">
@@ -266,6 +298,7 @@
       <p class="abc">Pay by link</p>
     </div>
   </div>
-  </div>
 </body>
+<script src="hostel.js"></script>
+
 </html>

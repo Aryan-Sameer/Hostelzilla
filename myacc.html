@@ -1,130 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account</title>
-    <link rel="stylesheet" href="hostel.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="hostel.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+  <link rel="stylesheet" href="hostel.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="hostel.js"></script>
 </head>
+
 <body>
-    <div class="main-contain">
-        <div class="header">
-            <!-- <h1>hostelzilla</h1> -->
-        </div>
-          <!-------------------------------------------- navbar ----------------------------------->
-          <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp" alt="Hostelzilla logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Available cities
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">Bengaluru</a></li>
-                      <li><a class="dropdown-item">Ahmedabad</a></li>
-                      <li><a class="dropdown-item">Hyderabad</a></li>
-                      <li><a class="dropdown-item">Delhi</a></li>
-                      <li><a class="dropdown-item">Vishakapatnam</a></li>
-                      <li><a class="dropdown-item">Mumbai</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-            </nav>
-      <!------------------------------------------- main body ------------------------->
-
-      <div class="account-main">
-        <div class="account-info">
-          <div id="div-1">
-            <p><i class="fa-solid fa-user"></i></p>
-          </div>
-          <div id="div-2">
-            <h1><span id="name">User name</span></h1>
-            <h5><span id="designation">student/ working/ traveller</span></h5>
-          </div>
-        </div>
-        <hr style="margin: 0;">
-        <div id="act-details">
-            <p>Email : <span id="email"></span></p>
-            <p>Phone no. : <span id="phn"></span></p>
-            <p>Languages : <span id="lang"></span></p>
-            <p>City : <span id="city"></span></p>
-            <button id="another" class="btn btn-warning">Enter your account details</button>
-        </div>
-
-                                    <!------------------- input ----------------->
-        <div class="input-field" id="account-input">
-          <p>
-            <label for="iname">Name</label>
-            <input id="iname" type="text" placeholder="enter your name">
-          </p>
-          <p>
-            <label for="idesig">Designation</label>
-            <input id="idesig" type="text">
-          </p>
-          <p>
-            <label for="iemail">Email</label>
-            <input id="iemail" type="email" placeholder="your emial id">
-          </p>
-          <p>
-            <label for="ilang">Ph no.</label>
-            <input id="iphn" type="number">
-          </p>
-          <p>
-            <label for="ilang">Languages known</label>
-            <input id="ilang" type="text">
-          </p>
-          <p>
-            <label for="icity">City</label>
-            <input id="icity" type="text" placeholder="enter your city">
-          </p>
-            <button id="submit-button" onclick="returnvalue()" class="btn btn-warning">submit</button>
-        </div>
+  <div class="header">
+    <!-- <h1>hostelzilla</h1> -->
+  </div>
+  <!-------------------------------------------- navbar ----------------------------------->
+  <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp"
+          alt="Hostelzilla logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Available cities
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">Bengaluru</a></li>
+              <li><a class="dropdown-item">Ahmedabad</a></li>
+              <li><a class="dropdown-item">Hyderabad</a></li>
+              <li><a class="dropdown-item">Delhi</a></li>
+              <li><a class="dropdown-item">Vishakapatnam</a></li>
+              <li><a class="dropdown-item">Mumbai</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
       </div>
-       <!--------------------------------------------- footer ----------------------------->
-    <div class="footer">
+    </div>
+  </nav>
+  <!------------------------------------------- main body ------------------------->
+
+  <div class="account-main">
+    <div class="account-info">
+      <div id="div-1">
+        <p><i class="fa-solid fa-user"></i></p>
+      </div>
+      <div id="div-2">
+        <h1><span id="name">User name</span></h1>
+        <h5><span id="designation">student/ working/ traveller</span></h5>
+      </div>
+    </div>
+    <hr style="margin: 0;">
+    <div id="act-details">
+      <p>Email : <span id="email"></span></p>
+      <p>Phone no. : <span id="phn"></span></p>
+      <p>Languages : <span id="lang"></span></p>
+      <p>City : <span id="city"></span></p>
+      <button id="another" class="btn btn-warning">Enter your account details</button>
+    </div>
+
+    <!------------------- input ----------------->
+    <div class="input-field" id="account-input">
+      <p>
+        <label for="iname">Name</label>
+        <input id="iname" type="text" placeholder="enter your name">
+      </p>
+      <p>
+        <label for="idesig">Designation</label>
+        <input id="idesig" type="text">
+      </p>
+      <p>
+        <label for="iemail">Email</label>
+        <input id="iemail" type="email" placeholder="your emial id">
+      </p>
+      <p>
+        <label for="ilang">Ph no.</label>
+        <input id="iphn" type="number">
+      </p>
+      <p>
+        <label for="ilang">Languages known</label>
+        <input id="ilang" type="text">
+      </p>
+      <p>
+        <label for="icity">City</label>
+        <input id="icity" type="text" placeholder="enter your city">
+      </p>
+      <button id="submit-button" onclick="returnvalue()" class="btn btn-warning">submit</button>
+    </div>
+  </div>
+  <!--------------------------------------------- footer ----------------------------->
+  <div class="footer">
+    <div class="abc">
+      <a id="copy-right">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group
+        name)</a>
       <div class="social">
         <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
         <a target="_blank" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
         <a target="_blank" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
         <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
       </div>
-      <div class="abc">
-        <a style="margin-left: 50px;">&copy 2023. Hostelzilla. All Rights Reserved | Designed and Developed by (group name)</a>
-      </div>
- 
-      <div id="foot-links">
-        <p class="abc">Cookies</p>
-        <p class="abc">Data protection</p>
-        <p class="abc">Legal Notice</p>
-        <p class="abc">Pay by link</p>
-      </div>
+    </div>
+
+    <div id="foot-links">
+      <p class="abc">Cookies</p>
+      <p class="abc">Data protection</p>
+      <p class="abc">Legal Notice</p>
+      <p class="abc">Pay by link</p>
     </div>
   </div>
 </body>
+
 </html>

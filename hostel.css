@@ -1,10 +1,10 @@
-.main-contain{
+.main{
+    width: 75%;
     margin: 0 auto;
-    width: 1349px;
 }
 .header{
     height: 150px;
-    text-align: center;
+    background-position: 50%;
     border: 5px solid #ffc107;
     background-image: url('images/header-img.PNG');
     width: 100%;
@@ -18,6 +18,7 @@
 }
 #navbar{
     padding: 0;
+    width: 100%;
     position: sticky;
     top: 0px;
     z-index: 5;
@@ -128,100 +129,110 @@ label #close{
 .block h1{
     font-weight: normal;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
-    padding: 50px 0px 40px 0px;
+    padding: 40px 0px 20px 0px;
+    /* width: 100%; */
+    text-overflow: ellipsis;
 }
 #carouselExampleCaptions-1{
-    width: 500px;
+    width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
 #carouselExampleCaptions-2{
-    width: 500px;
+    width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
 #carouselExampleCaptions-3{
-    width: 500px;
+    width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
 #carouselExampleCaptions-4{
-    width: 500px;
+    width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
 #carouselExampleCaptions-5{
-    width: 500px;
+    width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
 #carouselExampleCaptions-6{
-    width: 500px;
+    width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
 .a{
-    margin: 0 auto;
-}
+    width: 40%;
+    }
 .b{
-    margin: 0 auto;
+    width: 40%;
 }
 #view-more{
     margin: 20px auto;
-    width: 500px;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     box-shadow: 0px 2px 4px grey;
 }
 .block{
-    width: 90%;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+hr{
+    margin: 0px;
 }
 /************************************* disclaimer *******************************/
 details{
     font-size: 20px;
-    padding: 10px 130px 10px 130px;
+    /* padding: 10px 130px 10px 130px; */
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     clear: both;
 }
 details p{
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 16px;
+    margin: 0px 20px;
 }
 /***************************************** footer *******************************/
 .footer{
     background-color: #ffc107;
     margin-top: 50px;
     width: 100%;
+    padding: 20px 50px;
 }
 .abc{
-    padding: 20px 0px 10px 30px;
-    cursor: pointer;
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 #copy-right:hover{
     text-decoration: underline;
+    margin: 0px;
 }
-.abc:hover{
+.footer a:hover{
     text-decoration: underline;
 }
 .footer #foot-links{
     display: flex;
-    margin-left: 50px
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0px 0px 0px;
 }
 .footer .social{
     float: right;
     font-size: 28px;
-    padding: 30px;
-    margin-right: 80px;
+    display: flex;
+    gap: 30px;
 }
 .footer .social a{
     opacity: 0.8;
-    padding-left: 40px;
 }
 .footer .social a:hover{
     opacity: 1;
 }
 /***************************************** city-wise-hostels *****************************/
 .hstl{
-    width: fit-content;
+    width: 80%;
     margin: 0 auto;
     margin-top: 50px;
     border: 1px solid rgba(0, 0, 0, 0.1);;
@@ -229,17 +240,18 @@ details p{
     border-radius: 10px;
     padding: 30px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .img{
-    margin-right: 30px;
+    width: 40%;
     border-radius: 10px;
 }
 .hstl .info{
     height: 200px;
-    width: 500px;
+    width: 60%;
     padding: 20px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .info::-webkit-scrollbar{
     width: 0px;
@@ -305,7 +317,7 @@ details p{
 .account-main{
     margin: 0 auto;
     margin-top: 50px;
-    width: 55%;
+    width: 50%;
     padding: 40px 70px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -347,7 +359,7 @@ details p{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 #account-input{
-    padding: 30px 40px 0px 40px;
+    padding: 30px 0px;
 }
 #account-input label{
     font-family: Arial, Helvetica, sans-serif;
