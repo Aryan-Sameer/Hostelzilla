@@ -1,44 +1,59 @@
-.main{
-    width: 75%;
+.main {
+    width: 70%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.header{
+
+.header {
     height: 150px;
-    background-position: 50%;
     border: 5px solid #ffc107;
+    border-bottom: 0px;
     background-image: url('images/header-img.PNG');
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
 }
+
 /***************************************** navbar ***********************************/
-#hostelzilla-logo{
+#hostelzilla-logo {
     width: 100px;
     height: 50px;
     mix-blend-mode: multiply;
     padding: 0;
 }
-#navbar{
+
+#navbar {
     padding: 0;
     width: 100%;
     position: sticky;
-    top: 0px;
+    top: -1px;
     z-index: 5;
+    box-shadow: 0px 1px 4px 1px rgba(84, 84, 84, 0.388);
 }
-#navbar a{
+
+#navbar a {
     font-size: 20px;
     font-family: sans-serif;
 }
-#navbar ul li a{
+
+#navbar ul li a {
     text-decoration: none;
     color: #554444;
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
     color: black;
 }
+
 /************************************ check box ***********************/
-#check{
+#check {
     display: none;
 }
-label #open{
+
+label #open {
     font-size: 30px;
     color: black;
     position: absolute;
@@ -46,46 +61,54 @@ label #open{
     cursor: pointer;
     transition: .5s;
 }
-label #close{
+
+label #close {
     position: absolute;
     left: -60px;
     cursor: pointer;
     border-radius: 2px;
     color: black;
     font-size: 30px;
-    transition:all .5s ease;
-    z-index: 2;
+    transition: all .5s ease;
+    z-index: 4;
 }
+
 /**************************************** side bar **************************/
-.menu{
-    width: 250px;
-    height: 450px;
+.menu {
+    width: 300px;
+    height: 500px;
     overflow: scroll;
     background-color: #ffc107;
     position: absolute;
-    left: -255px;
+    left: -300px;
     transition: all .5s ease;
     margin-top: -22px;
     padding-top: 50px;
     box-shadow: 0px 2px 4px grey;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    z-index: 1;
+    z-index: 3;
 }
-#profile{
+
+#profile {
     font-size: 42px;
 }
-#account{
+
+#account {
     color: black;
 }
-.menu::-webkit-scrollbar{  /**** scroll bar ***/
+
+.menu::-webkit-scrollbar {
+    /**** scroll bar ***/
     width: 0px;
 }
+
 .menu ul li {
     padding: 10px 10px 10px 0px;
     list-style-type: none;
 }
-.menu ul li a{
+
+.menu ul li a {
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -93,149 +116,183 @@ label #close{
     transition: all .3s ease;
     font-weight: 600;
 }
-.head a{
+
+.head a {
     text-decoration: none;
     font-size: 16px;
     color: grey;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
     padding-left: 10px;
 }
-#check:checked ~ .menu{
+
+#check:checked~.menu {
     left: 0px;
 }
-#check:checked ~ label #close{
-    left: 195px;
+
+#check:checked~label #close {
+    left: 255px;
 }
-#check:checked ~ label #open{
+
+#check:checked~label #open {
     left: 200px;
     opacity: 0;
 }
+
 /*************************************** slogan **************************/
-#slogan h3{
+#slogan h3 {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     word-spacing: 10px;
 }
-#slogan p{
+
+#slogan p {
     text-align: justify;
     width: 55%;
     background-color: #ffc107;
     padding: 20px;
     border-radius: 10px;
 }
+
 /**************************************** hostels *******************************/
-.block h1{
+.block h1 {
     font-weight: normal;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     padding: 40px 0px 20px 0px;
-    /* width: 100%; */
     text-overflow: ellipsis;
 }
-#carouselExampleCaptions-1{
+
+#carouselExampleCaptions-1 {
     width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
-#carouselExampleCaptions-2{
+
+#carouselExampleCaptions-2 {
     width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
-#carouselExampleCaptions-3{
+
+#carouselExampleCaptions-3 {
     width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
-#carouselExampleCaptions-4{
+
+#carouselExampleCaptions-4 {
     width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
-#carouselExampleCaptions-5{
+
+#carouselExampleCaptions-5 {
     width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
-#carouselExampleCaptions-6{
+
+#carouselExampleCaptions-6 {
     width: 100%;
     box-shadow: 0px 2px 4px grey;
 }
-.a{
-    width: 40%;
-    }
-.b{
-    width: 40%;
+
+.carousel-caption {
+    text-shadow: 0px 0px 2px rgba(128, 128, 128, 0.614);
 }
-#view-more{
+
+.a,
+.b {
+    width: 43%;
+}
+
+
+#view-more {
     margin: 20px auto;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    box-shadow: 0px 2px 4px grey;
+    box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.429);
 }
-.block{
+
+.block {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
 }
-hr{
+
+hr {
     margin: 0px;
 }
+
 /************************************* disclaimer *******************************/
-details{
+details {
     font-size: 20px;
-    /* padding: 10px 130px 10px 130px; */
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     clear: both;
 }
-details p{
+
+details p {
+    padding: 10px 0px;
     font-size: 16px;
     margin: 0px 20px;
 }
+
+.disclaimer hr {
+    margin: 7px 0px;
+}
+
 /***************************************** footer *******************************/
-.footer{
+.footer {
     background-color: #ffc107;
     margin-top: 50px;
     width: 100%;
     padding: 20px 50px;
 }
-.abc{
+
+.abc {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#copy-right:hover{
+
+#copy-right:hover {
     text-decoration: underline;
     margin: 0px;
 }
-.footer a:hover{
+
+.footer a:hover {
     text-decoration: underline;
 }
-.footer #foot-links{
+
+.footer #foot-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px 0px 0px 0px;
 }
-.footer .social{
+
+.footer .social {
     float: right;
     font-size: 28px;
     display: flex;
     gap: 30px;
 }
-.footer .social a{
+
+.footer .social a {
     opacity: 0.8;
 }
-.footer .social a:hover{
+
+.footer .social a:hover {
     opacity: 1;
 }
+
 /***************************************** city-wise-hostels *****************************/
-.hstl{
+.hstl {
     width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);;
+    margin: 50px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 30px;
@@ -243,21 +300,25 @@ details p{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.img{
+
+.img {
     width: 40%;
     border-radius: 10px;
 }
-.hstl .info{
+
+.hstl .info {
     height: 200px;
     width: 60%;
-    padding: 20px;
+    padding: 0px 20px;
     overflow-y: scroll;
 }
-.info::-webkit-scrollbar{
+
+.info::-webkit-scrollbar {
     width: 0px;
 }
+
 /******************************************* contact *****************************/
-#forms{
+#forms {
     width: fit-content;
     margin: 50px auto;
     border: 1px solid black;
@@ -268,24 +329,28 @@ details p{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
 }
-.left{
-    padding: 20px;
-}
-.right{
+
+.left {
     padding: 20px;
 }
 
-#forms #input{
+.right {
+    padding: 20px;
+}
+
+#forms #input {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 5px;
 }
-#forms label{
+
+#forms label {
     font-family: Arial, Helvetica, sans-serif;
 }
-.faq{
+
+.faq {
     margin: 0 auto;
     border: 1px solid black;
     width: 70%;
@@ -295,26 +360,31 @@ details p{
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.faq details{
-    padding: 5px 20px;
+
+.faq details {
+    padding: 10px 20px;
     text-align: justify;
 }
-.faq details p{
+
+.faq details p {
     font-size: 14px;
     width: 90%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 10px 0px 10px;
 }
-.details{
+
+.contacts {
     text-align: left;
     padding: 30px 0px 0px 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /******************************************** my account ***************************/
-#account-input{
+#account-input {
     display: none;
 }
-.account-main{
+
+.account-main {
     margin: 0 auto;
     margin-top: 50px;
     width: 50%;
@@ -323,59 +393,268 @@ details p{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-.account-info{
+
+.account-info {
     display: flex;
 }
-#div-1{
+
+#div-1 {
     font-size: 70px;
     padding: 10px;
     color: #807878;
 }
-#div-2{
+
+#div-2 {
     padding: 16px;
 }
-#div-2 h1{
+
+#div-2 h1 {
     font-size: 46px;
     color: #ffc107;
 }
-#act-details{
+
+#act-details {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
 }
-#act-details p{
+
+#act-details p {
     font-weight: bold;
     font-size: 18px;
     padding-top: 5px;
 }
-#act-details span{
+
+#act-details span {
     color: #807878;
     font-weight: normal;
 }
-#another{
+
+#another {
     margin-top: 20px;
     width: 100%;
     font-size: 18px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-#account-input{
+
+#account-input {
     padding: 30px 0px;
 }
-#account-input label{
+
+#account-input label {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
-#account-input input{
+
+#account-input input {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.041);
     padding: 10px;
 }
-#submit-button{
+
+#submit-button {
     margin-top: 20px;
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.041);
+}
+
+/************************************* media queries *****************************************************/
+
+@media (max-width: 1250px) {
+    #slogan p {
+        width: 80%;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .a,
+    .b {
+        width: 45%;
+    }
+
+    .hstl {
+        width: 90%;
+    }
+
+    .account-main {
+        width: 60%;
+    }
+    .header{
+        background-size: 110%;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        font-size: 0.7em;
+    }
+
+    #slogan p {
+        font-size: 0.85em;
+    }
+
+    .hstl {
+        width: 100%;
+    }
+
+    .img {
+        width: 45%;
+    }
+
+    .hstl .info {
+        width: 55%;
+
+    }
+
+    .faq {
+        width: 702px;
+    }
+
+    .account-main {
+        padding: 30px 50px;
+        width: 70%;
+    }
+
+    .header {
+        background-size: 120%;
+    }
+}
+
+@media (max-width: 810px) {
+    .img {
+        width: 50%;
+    }
+
+    .hstl .info {
+        width: 50%;
+    }
+
+    .header {
+        background-size: 135%;
+    }
+}
+
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column;
+    }
+
+    .a,
+    .b {
+        width: 100%;
+    }
+
+    .carousel-caption {
+        display: block;
+    }
+
+    .menu {
+        height: max-content;
+    }
+
+    .account-main {
+        padding: 20px 40px;
+        width: 80%;
+    }
+    .header{
+        background-size: 150%;
+    }
+}
+
+@media (max-width: 720px) {
+    .hstl {
+        flex-direction: column;
+        width: 80%;
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    .img {
+        width: 100%;
+        height: 240px;
+        margin: 10px 0px;
+    }
+
+    .hstl .info {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    #forms {
+        width: 90%;
+    }
+
+    .faq {
+        width: 90%;
+    }
+
+    .faq details p {
+        padding: 0px;
+        margin: 0px;
+    }
+    .header{
+        background-size: 160%;
+    }
+}
+
+@media (max-width: 576px) {
+    #slogan h3 {
+        font-size: 0.95em;
+    }
+
+    #slogan p {
+        width: 90%;
+        font-size: 0.65em;
+    }
+
+    summary {
+        font-size: 0.7em;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer #foot-links {
+        gap: 5px;
+    }
+
+    .hstl {
+        width: 90%;
+    }
+
+    .img {
+        height: 180px;
+    }
+
+    #forms {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+
+    .faq details p {
+        font-size: 0.8em;
+    }
+
+    .account-main {
+        padding: 20px;
+        width: 90%;
+    }
+
+    #div-2 h1 {
+        font-size: 40px;
+    }
+
+    label #open {
+        font-size: 26px;
+    }
+    .header{
+        background-size: 180%;
+    }
 }
