@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Account</title>
   <link rel="stylesheet" href="hostel.css">
+  <link rel="icon" href="images/hostelzilla-logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,7 +21,7 @@
   <!-------------------------------------------- navbar ----------------------------------->
   <nav class="navbar navbar-expand-lg bg-warning" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img id="hostelzilla-logo" src="images/hostelzilla-logo.webp"
+      <a class="navbar-brand" href="index.html"><img id="hostelzilla-logo" src="images/hostelzilla-logo.png"
           alt="Hostelzilla logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,13 +52,43 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex my-1" role="search">
           <input class="form-control me-2" type="search" placeholder="Search for your city" aria-label="Search">
           <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
+
+  <!------------------------------------------- checkbox ----------------------------->
+  <input id="check" type="checkbox">
+  <label for="check">
+    <i class="fa-solid fa-bars" id="open"></i>
+    <i class="fa-solid fa-xmark" id="close"></i>
+  </label>
+  <!-------------------------------------------- side bar --------------------------------->
+  <div class="menu">
+    <ul>
+      <div class="head">
+        <a id="account" href="myacc.html"><i id="profile" class="fa-solid fa-user"></i>
+          <h4 class="acc-name">My Account</h4>
+        </a>
+      </div>
+
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">Wishlist</a></li>
+      <li><a href="#">Preferences</a></li>
+      <li><a href="#"> your location</a></li>
+      <li><a href="#">Deals and offers</a></li>
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Send Feedback</a></li>
+      <hr style="color: grey; width: 80%;">
+      <li><a href="#">Settings</a></li>
+      <li><a>Logout</a></li>
+    </ul>
+  </div>
   <!------------------------------------------- main body ------------------------->
 
   <div class="account-main">
@@ -67,51 +98,60 @@
       </div>
       <div id="div-2">
         <h1><span id="name">User name</span></h1>
-        <h5><span id="designation">student/ working/ traveller</span></h5>
+        <h5><span id="designation">student / working</span></h5>
       </div>
     </div>
     <hr style="margin: 0;">
     <div id="act-details">
       <p>Email : <span id="email"></span></p>
-      <p>Phone no. : <span id="phn"></span></p>
-      <p>Languages : <span id="lang"></span></p>
+      <p>Phone : <span id="phn"></span></p>
       <p>City : <span id="city"></span></p>
-      <button id="another" class="btn btn-warning">Enter your account details</button>
+      <div class="acc-btns">
+        <button id="login" class="btn btn-warning my-1">Login / Signin</button>
+        <button id="logout" class="btn btn-warning my-1">Logout</button>
+        <button id="edit" class="btn btn-warning my-1">Edit</button>
+      </div>
     </div>
 
     <!------------------- input ----------------->
     <div class="input-field" id="account-input">
       <p>
-        <label for="iname">Name</label>
-        <input id="iname" type="text" placeholder="enter your name">
+        <label for="iuser">Name</label>
+        <input id="iuser" type="text" placeholder="Enter your name">
       </p>
-      <p>
+      <p id="select">
         <label for="idesig">Designation</label>
-        <input id="idesig" type="text">
+        <select name="idesig" id="idesig">
+          <option value="student">Select</option>
+          <option value="student">Student</option>
+          <option value="working">Working</option>
+          <option value="tourist">Tourist</option>
+        </select>
       </p>
       <p>
         <label for="iemail">Email</label>
-        <input id="iemail" type="email" placeholder="your emial id">
+        <input id="iemail" type="email" placeholder="Your emial id">
       </p>
       <p>
-        <label for="ilang">Ph no.</label>
-        <input id="iphn" type="number">
-      </p>
-      <p>
-        <label for="ilang">Languages known</label>
-        <input id="ilang" type="text">
+        <label for="ilang">Phone</label>
+        <input id="iphn" type="number" placeholder="Enter phone number">
       </p>
       <p>
         <label for="icity">City</label>
-        <input id="icity" type="text" placeholder="enter your city">
+        <input id="icity" type="text" placeholder="Enter your city">
       </p>
-      <button id="submit-button" onclick="returnvalue()" class="btn btn-warning">submit</button>
+      <p id="password">
+        <label for="ipass">Password</label>
+        <input id="ipass" type="password" placeholder="Enter password">
+      </p>
+      <button id="submit-button" class="btn btn-warning">submit</button>
     </div>
   </div>
   <!--------------------------------------------- footer ----------------------------->
   <div class="footer">
     <div class="abc">
-      <a id="copy-right">&copy <span class="year"></span>. Hostelzilla. All Rights Reserved | Designed and Developed by (group
+      <a id="copy-right">&copy <span class="year"></span>. Hostelzilla. All Rights Reserved | Designed and Developed by
+        (group
         name)</a>
       <div class="social">
         <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
