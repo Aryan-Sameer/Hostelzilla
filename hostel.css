@@ -23,6 +23,7 @@
     height: 50px;
     mix-blend-mode: multiply;
     padding: 0;
+    clip: rect(0px, 20px, 0px 20px);
 }
 
 #navbar {
@@ -270,7 +271,6 @@ details p {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 10px 0px 0px 0px;
 }
 
 .footer .social {
@@ -565,6 +565,9 @@ details p {
     .header{
         background-size: 150%;
     }
+    .faq{
+        padding: 30px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -596,7 +599,6 @@ details p {
 
     .faq details p {
         padding: 0px;
-        margin: 0px;
     }
     .header{
         background-size: 160%;
@@ -609,12 +611,16 @@ details p {
     }
 
     #slogan p {
-        width: 90%;
+        width: 80%;
         font-size: 0.65em;
     }
 
     summary {
         font-size: 0.7em;
+    }
+    .disclaimer p{
+        font-size: 0.5em;
+        margin: 0px;
     }
 
     .footer {
@@ -637,10 +643,18 @@ details p {
         flex-direction: column;
         margin: 50px auto;
     }
+    #forms .left{
+        padding-bottom: 0px;
+    }
+    #forms .right{
+        padding-top: 0px;
+    }
 
     .faq details p {
-        font-size: 0.8em;
+        font-size: 0.5em;
+        margin-right: 0px;
     }
+    
 
     .account-main {
         padding: 20px;
@@ -656,5 +670,10 @@ details p {
     }
     .header{
         background-size: 180%;
+        height: 130px;
     }
+    .footer{
+        font-size: 0.8m;
+    }
+
 }
