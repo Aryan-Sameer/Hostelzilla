@@ -23,7 +23,6 @@
     height: 50px;
     mix-blend-mode: multiply;
     padding: 0;
-    clip: rect(0px, 20px, 0px 20px);
 }
 
 #navbar {
@@ -612,7 +611,7 @@ details p {
 
     #slogan p {
         width: 80%;
-        font-size: 0.65em;
+        font-size: 0.5em;
     }
 
     summary {
@@ -673,7 +672,7 @@ details p {
         height: 130px;
     }
     .footer{
-        font-size: 0.8m;
+        font-size: 0.8em;
     }
 
 }
