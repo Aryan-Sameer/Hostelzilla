@@ -48,6 +48,10 @@
     color: black;
 }
 
+#addHostels{
+    cursor: pointer;
+}
+
 /************************************ check box ***********************/
 #check {
     display: none;
