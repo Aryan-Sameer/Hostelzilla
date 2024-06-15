@@ -607,6 +607,9 @@ select {
     .faq {
         padding: 30px;
     }
+    .line{
+        display: none;
+    }
 }
 
 @media (max-width: 720px) {
