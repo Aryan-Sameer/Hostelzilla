@@ -9,10 +9,8 @@ let Lphone = localStorage.getItem("phone")
 let Lcity = localStorage.getItem("city")
 let Lpass = localStorage.getItem("password")
 
-console.log(localStorage.length)
-
 /******************************************** my account page *****************************/
-//login btn
+//logging in
 $(document).ready(function () {
   $("#login").click(function () {
     $("#account-input").slideToggle()
@@ -200,4 +198,3 @@ sample.forEach((e, index) => {
     location.reload()
   })
 })
-
