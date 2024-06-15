@@ -13,6 +13,7 @@ let Lpass = localStorage.getItem("password")
 
 if(Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com"){
   $("#addHostels").html("Add Hostels")
+  Ldesig = Ldesig + " (Admin) "
 }
 
 /******************************************** my account page *****************************/
