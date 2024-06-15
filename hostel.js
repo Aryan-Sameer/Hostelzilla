@@ -9,13 +9,16 @@ let Lphone = localStorage.getItem("phone")
 let Lcity = localStorage.getItem("city")
 let Lpass = localStorage.getItem("password")
 
+const buttons = document.querySelectorAll('.mark')
+
 /************************************************ Admin ***********************************/
 
-if(Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com"){
+if (Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com" && Lphone == "8247303503" && Lcity == "Hyderabad") {
   $("#addHostels").html("Add Hostels")
   Ldesig = Ldesig + " (Admin) "
-  document.querySelector("#iuser").toggleAttribute("disabled")
-  document.querySelector("#iemail").toggleAttribute("disabled")
+  buttons.forEach(e => {
+    e.toggleAttribute("disabled")
+  })
 }
 
 /******************************************** my account page *****************************/
@@ -27,7 +30,7 @@ $(document).ready(function () {
       $(this).val("")
     });
     $("#password").show()
-    if(localStorage.length != 0){
+    if (localStorage.length != 0 && !(Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com" && Lphone == "8247303503" && Lcity == "Hyderabad")) {
       document.getElementById("edit").toggleAttribute("disabled")
     }
   })
@@ -88,16 +91,16 @@ $("#submit-button").click(function () {
 
 //edit details
 $("#edit").click(function () {
-  if(localStorage.length !=0){
+  if ((localStorage.length != 0) && !(Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com" && Lphone == "8247303503" && Lcity == "Hyderabad")) {
     $("#account-input").slideToggle()
-  
+
     $('#iuser').val(Luser)
     $('#idesig').val(Ldesig)
     $('#iemail').val(Lemail)
     $('#iphn').val(Lphone)
     $('#icity').val(Lcity)
     $('#ipass').val(Lpass)
-  
+
     $("#password").hide()
     document.getElementById("login").toggleAttribute("disabled")
   }
@@ -155,30 +158,29 @@ $(".year").html(year)
 
 /************************************************ wishlists *********************************************/
 
-  // wishlist button
-  const buttons = document.querySelectorAll('.mark')
+// wishlist button
 
-  buttons.forEach(button => {
-    button.addEventListener('click', function () {
-      if(localStorage.length != 0){
+buttons.forEach(button => {
+  button.addEventListener('click', function () {
+    if (localStorage.length != 0) {
 
-        let card = this.closest('.hstl')
-        let cardId = card.getAttribute('data-id')
-        let cardContent = card.innerHTML
-  
-        let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || []
-        bookmarks.push({ id: cardId, content: cardContent })
-        localStorage.setItem('bookmarks', JSON.stringify(bookmarks))
-  
-        button.innerHTML = "Wishlisted"
-          
-      }
-      else{
-        alert("Login to your account")
-      }
+      let card = this.closest('.hstl')
+      let cardId = card.getAttribute('data-id')
+      let cardContent = card.innerHTML
 
-    })
+      let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || []
+      bookmarks.push({ id: cardId, content: cardContent })
+      localStorage.setItem('bookmarks', JSON.stringify(bookmarks))
+
+      button.innerHTML = "Wishlisted"
+
+    }
+    else {
+      alert("Login to your account")
+    }
+
   })
+})
 const container = document.getElementById('wishlisted-cards')
 const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || []
 
