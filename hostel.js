@@ -9,6 +9,12 @@ let Lphone = localStorage.getItem("phone")
 let Lcity = localStorage.getItem("city")
 let Lpass = localStorage.getItem("password")
 
+/************************************************ navbar ***********************************/
+
+if(Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com"){
+  $("#addHostels").html("Add Hostels")
+}
+
 /******************************************** my account page *****************************/
 //logging in
 $(document).ready(function () {
