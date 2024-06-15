@@ -81,17 +81,19 @@ $("#submit-button").click(function () {
 
 //edit details
 $("#edit").click(function () {
-  $("#account-input").slideToggle()
-
-  $('#iuser').val(Luser)
-  $('#idesig').val(Ldesig)
-  $('#iemail').val(Lemail)
-  $('#iphn').val(Lphone)
-  $('#icity').val(Lcity)
-  $('#ipass').val(Lpass)
-
-  $("#password").hide()
-  document.getElementById("login").toggleAttribute("disabled")
+  if(localStorage.length !=0){
+    $("#account-input").slideToggle()
+  
+    $('#iuser').val(Luser)
+    $('#idesig').val(Ldesig)
+    $('#iemail').val(Lemail)
+    $('#iphn').val(Lphone)
+    $('#icity').val(Lcity)
+    $('#ipass').val(Lpass)
+  
+    $("#password").hide()
+    document.getElementById("login").toggleAttribute("disabled")
+  }
 });
 
 //loging out
@@ -113,10 +115,6 @@ if (localStorage.length != 0) {
   $('#phn').html(Lphone)
   $('#city').html(Lcity)
   $('.acc-name').html(Luser)
-}
-else{
-  document.querySelector("#edit").toggleAttribute("disabled")
-  document.querySelector("#logout").toggleAttribute("disabled")
 }
 
 /************************************************** side bar ******************************************/
