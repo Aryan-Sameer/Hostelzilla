@@ -20,7 +20,9 @@ $(document).ready(function () {
       $(this).val("")
     });
     $("#password").show()
-    document.getElementById("edit").toggleAttribute("disabled")
+    if(localStorage.length != 0){
+      document.getElementById("edit").toggleAttribute("disabled")
+    }
   })
 })
 
@@ -111,6 +113,10 @@ if (localStorage.length != 0) {
   $('#phn').html(Lphone)
   $('#city').html(Lcity)
   $('.acc-name').html(Luser)
+}
+else{
+  document.querySelector("#edit").toggleAttribute("disabled")
+  document.querySelector("#logout").toggleAttribute("disabled")
 }
 
 /************************************************** side bar ******************************************/
