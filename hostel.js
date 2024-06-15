@@ -182,7 +182,7 @@ bookmarks.forEach(bookmark => {
 
 if (bookmarks.length === 0) {
   $("#wishlisted-cards").html(`
-    <h2 style="font-weight: bold; color: #B3B3B3; padding: 60px;" >You'r wishlist is empty</h2>
+    <h2 style="font-weight: bold; color: #B3B3B3; padding: 40px;" >You'r wishlist is empty</h2>
   `)
 }
 
