@@ -488,7 +488,6 @@ select {
    min-height: 44.4vh;
 }
 #wishlisted-cards{
-    width: max-content;
     margin: 0 auto;
 }
 
