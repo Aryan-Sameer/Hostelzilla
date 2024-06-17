@@ -48,7 +48,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" id="addHostels">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -78,7 +78,7 @@
           </div>
         </div>
         <hr style="color: grey; width: 80%;">
-        <li><a href="#">Wishlist</a></li>
+        <li><a href="/wishlist.html">Wishlist</a></li>
         <li><a href="#">Preferences</a></li>
         <li><a href="#">Hostels in your location</a></li>
         <li><a href="#">Deals and offers</a></li>
@@ -88,7 +88,7 @@
         <li><a href="#">Send Feedback</a></li>
         <li><a href="#">Settings</a></li>
         <hr style="color: grey; width: 80%;">
-        <li><a href="#">Logout</a></li>
+        <li class="loginout"></li>
       </ul>
     </div>
     <!--------------------------------- hostels ---------------------------->
@@ -97,7 +97,7 @@
 
     <div class="main">
 
-      <div class="hstl"> <!----- first hstl ----->
+      <div data-id="hyderabad1" class="hstl"> <!----- first hstl ----->
         <img class="img" src="images/hyderabad/lagos.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -128,12 +128,13 @@
         </div>
       </div>
 
-      <div class="hstl"> <!----- second hstl ----->
+      <div data-id="hyderabad2" class="hstl"> <!----- second hstl ----->
         <img class="img" src="images/hyderabad/lubin.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
           <h5>Lagos House</h5>
           <p><b>Address:</b> Unnamed Road, Gandi Maisamma, Hyderabad, Telangana 500043</p>
+
           <b>Facilities:</b>
           <ul>
             <li>well furnished and spacious rooms</li>
@@ -145,21 +146,22 @@
             <li>well maintained washrooms</li>
             <li>24/7 water and electricity supply</li>
           </ul>
-          <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b> <span
-              style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
+
           <p>Super market, bus stand and medical facilities within walkable distance. </p>
           <p style="word-spacing: 10px;"><b>Fee: 15,000/-</b> <span
               style="text-decoration: line-through; font-weight: normal;">17,000</span></p>
           <p><i class="fa-solid fa-phone"></i> Ph no. : 1234567890</p>
+
 
           <a target="_blank"
             href="hhttps://www.google.com/maps/place/Stanza+Living+Lagos+House/@17.5772329,78.424496,15z/data=!4m6!3m5!1s0x3bcb8f3cbd8d8b4f:0x9931f255bd39d434!8m2!3d17.5772329!4d78.424496!16s%2Fg%2F11j99j9vn_?entry=ttu"><button
               id="location" class="btn btn-warning my-1">View location</button></a>
           <button class="btn btn-warning mark">Wishlist</button>
         </div>
+        
       </div>
 
-      <div class="hstl"> <!----- third hstl ------->
+      <div data-id="hyderabad3" class="hstl"> <!----- third hstl ------->
         <img class="img" src="images/hyderabad/syracuse.webp" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -190,7 +192,7 @@
         </div>
       </div>
 
-      <div class="hstl"> <!---- fourth hstl ----->
+      <div data-id="hyderabad4" class="hstl"> <!---- fourth hstl ----->
         <img class="img" src="images/hyderabad/6.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -222,7 +224,7 @@
         </div>
       </div>
 
-      <div class="hstl"> <!------- fifth hstl ------->
+      <div data-id="hyderabad5" class="hstl"> <!------- fifth hstl ------->
         <img class="img" src="images/hyderabad/5.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -253,7 +255,7 @@
         </div>
       </div>
 
-      <div class="hstl"> <!------ sixth hstl ------->
+      <div data-id="hyderabad6" class="hstl"> <!------ sixth hstl ------->
         <img class="img" src="images/hyderabad/4.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -287,7 +289,8 @@
     <!--------------------------------------------- footer ----------------------------->
     <div class="footer">
       <div class="abc">
-        <a id="copy-right">&copy <span class="year"></span>. Hostelzilla. All Rights Reserved | Designed and Developed by (group
+        <a id="copy-right">&copy <span class="year"></span>. Hostelzilla. All Rights Reserved | Designed and Developed
+          by (group
           name)</a>
         <div class="social">
           <a target="_blank" href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></a>
@@ -296,7 +299,7 @@
           <a target="_blank" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
         </div>
       </div>
-  
+
       <div id="foot-links">
         <p class="abc">Cookies</p>
         <p class="abc">Data protection</p>
@@ -306,4 +309,5 @@
     </div>
 </body>
 <script src="hostel.js"></script>
+
 </html>

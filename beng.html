@@ -48,7 +48,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" id="addHostels">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -78,7 +78,7 @@
           </div>
         </div>
         <hr style="color: grey; width: 80%;">
-        <li><a href="#">Wishlist</a></li>
+        <li><a href="/wishlist.html">Wishlist</a></li>
         <li><a href="#">Preferences</a></li>
         <li><a href="#">Hostels in your location</a></li>
         <li><a href="#">Deals and offers</a></li>
@@ -88,7 +88,7 @@
         <li><a href="#">Send Feedback</a></li>
         <li><a href="#">Settings</a></li>
         <hr style="color: grey; width: 80%;">
-        <li><a href="#">Logout</a></li>
+        <li class="loginout"></li>
       </ul>
     </div>
     <!--------------------------------- hostels ---------------------------->
@@ -97,7 +97,7 @@
 
     <div class="main">
 
-      <div class="hstl"> <!----- first hstl ----->
+      <div data-id="bengaluru1" class="hstl"> <!----- first hstl ----->
         <img class="img" src="images/bengaluru/salzburg house.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -124,12 +124,12 @@
           <a target="_blank"
             href="https://www.google.com/maps/place/Stanza+Living+Salzburg+House/@12.9310848,77.6087012,15z/data=!4m6!3m5!1s0x3bae15c48c516fbb:0xa1c40892efb5fca8!8m2!3d12.9310848!4d77.6087012!16s%2Fg%2F11jnxylvrn?entry=ttu"><button
                id="location" class="btn btn-warning my-1">View location</button></a>
-          <button id="marked1"  class="btn btn-warning mark">Wishlist</button>
+          <button class="btn btn-warning mark">Wishlist</button>
 
         </div>
       </div>
 
-      <div class="hstl"> <!----- second hstl ----->
+      <div data-id="bengaluru2" class="hstl"> <!----- second hstl ----->
         <img class="img" src="images/bengaluru/hamburg house.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -155,12 +155,12 @@
           <a target="_blank"
             href="https://www.google.com/maps/place/Stanza+Living+Frankfurt+House/@12.9345097,77.6089814,15z/data=!4m6!3m5!1s0x3bae15d0ff470919:0x3d67029be020c670!8m2!3d12.9345097!4d77.6089814!16s%2Fg%2F11h195bvvj?entry=ttu"><button
                id="location" class="btn btn-warning my-1">View location</button></a>
-          <button id="marked2"  class="btn btn-warning mark">Wishlist</button>
+          <button class="btn btn-warning mark">Wishlist</button>
 
         </div>
       </div>
 
-      <div class="hstl"> <!----- third hstl ------->
+      <div data-id="bengaluru3" class="hstl"> <!----- third hstl ------->
         <img class="img" src="images/bengaluru/frankfurt.PNG" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -186,11 +186,11 @@
           <a target="_blank"
             href="https://www.google.com/maps/place/Stanza+Living+Hamburg+House/@12.935074,77.6075314,15z/data=!4m6!3m5!1s0x3bae15e4ad97a335:0x60d9d6dce3d5ed57!8m2!3d12.935074!4d77.6075314!16s%2Fg%2F11h71kp00_?entry=ttu"><button
                id="location" class="btn btn-warning my-1">View location</button></a>
-          <button id="marked3"  class="btn btn-warning mark">Wishlist</button>
+          <button class="btn btn-warning mark">Wishlist</button>
         </div>
       </div>
 
-      <div class="hstl"> <!---- fourth hstl ----->
+      <div data-id="bengaluru4" class="hstl"> <!---- fourth hstl ----->
         <img class="img" src="images/bengaluru/4.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -216,11 +216,11 @@
           <a target="_blank"
             href="https://www.google.com/maps/place/Stanza+Living+Bratislava+House/@12.9332114,77.6069696,15z/data=!4m2!3m1!1s0x0:0x53263446127fea35?sa=X&ved=2ahUKEwjV9pGl1rGAAxUlY_UHHUV-BDQQ_BJ6BAhOEAA&ved=2ahUKEwjV9pGl1rGAAxUlY_UHHUV-BDQQ_BJ6BAhbEAg"><button
                id="location" class="btn btn-warning my-1">View location</button></a>
-          <button id="marked4"  class="btn btn-warning mark">Wishlist</button>
+          <button class="btn btn-warning mark">Wishlist</button>
         </div>
       </div>
 
-      <div class="hstl"> <!------- fifth hstl ------->
+      <div data-id="bengaluru5" class="hstl"> <!------- fifth hstl ------->
         <img class="img" src="images/bengaluru/5.jpg" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -246,11 +246,11 @@
           <a target="_blank"
             href="https://www.google.com/maps/place/Zolo+Mitra+Co-Living+%7C+Redefining+PG/@12.9435538,77.6289268,15z/data=!4m2!3m1!1s0x0:0x27adc87896bd3e5e?sa=X&ved=2ahUKEwijy6XR1rGAAxUSZfUHHVyGBTUQ_BJ6BAhjEAA&ved=2ahUKEwijy6XR1rGAAxUSZfUHHVyGBTUQ_BJ6BAhwEAg"><button
                id="location" class="btn btn-warning my-1">View location</button></a>
-          <button id="marked5"  class="btn btn-warning mark">Wishlist</button>
+          <button class="btn btn-warning mark">Wishlist</button>
         </div>
       </div>
 
-      <div class="hstl"> <!------ sixth hstl ------->
+      <div data-id="bengaluru6" class="hstl"> <!------ sixth hstl ------->
         <img class="img" src="images/bengaluru/6.webp" width="350px" height="200px" alt="hostel-1">
         <div class="info">
 
@@ -277,7 +277,7 @@
           <a target="_blank"
             href="https://www.google.com/maps/place/Stanza+Living+Como+House/@12.9338855,77.610091,15z/data=!4m6!3m5!1s0x3bae15bf91c00e3b:0x869b984570ac9fea!8m2!3d12.9338855!4d77.610091!16s%2Fg%2F11fnp89gkb?entry=ttu"><button
               id="location" class="btn btn-warning my-1">View location</button></a>
-          <button id="marked6"  class="btn btn-warning mark">Wishlist</button>
+          <button class="btn btn-warning mark">Wishlist</button>
         </div>
       </div>
     </div>

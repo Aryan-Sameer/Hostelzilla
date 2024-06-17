@@ -46,7 +46,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" id="addHostels">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -76,7 +76,7 @@
         </div>
       </div>
       <hr style="color: grey; width: 80%;">
-      <li><a href="#">Wishlist</a></li>
+      <li><a href="/wishlist.html">Wishlist</a></li>
       <li><a href="#">Preferences</a></li>
       <li><a href="#">Hostels in your location</a></li>
       <li><a href="#">Deals and offers</a></li>
@@ -86,7 +86,7 @@
       <li><a href="#">Send Feedback</a></li>
       <li><a href="#">Settings</a></li>
       <hr style="color: grey; width: 80%;">
-      <li><a href="#">Logout</a></li>
+      <li class="loginout"></li>
     </ul>
   </div>
   <!--------------------------------- hostels ---------------------------->
@@ -95,7 +95,7 @@
 
   <div class="main">
 
-    <div class="hstl"> <!----- first hstl ----->
+    <div data-id="mumbai1" class="hstl"> <!----- first hstl ----->
       <img class="img" src="images/mumbai/b.jpg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
 
@@ -121,12 +121,12 @@
         <a target="_blank"
           href="https://www.google.com/maps/place/Girls+pg+in+Andheri+West/@19.1343315,72.8201163,15z/data=!4m6!3m5!1s0x3be7b73b9e1874cb:0x34ba8fbf182f969d!8m2!3d19.1343315!4d72.8201163!16s%2Fg%2F11tfv371nd?entry=ttu"><button
             id="location" class="btn btn-warning my-1">View location</button></a>
-        <button  class="btn btn-warning mark">Wishlist</button>
+        <button class="btn btn-warning mark">Wishlist</button>
 
       </div>
     </div>
 
-    <div class="hstl"> <!----- second hstl ----->
+    <div data-id="mumbai2" class="hstl"> <!----- second hstl ----->
       <img class="img" src="images/mumbai/c.jpg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
 
@@ -153,11 +153,11 @@
         <a target="_blank"
           href="https://www.google.com/maps/dir/19.1110324,72.8289143/Building,+Plot+No.+22,+101,+Victory,+N+S+Rd+Number+5,+Vile+Parle+West,+Mumbai,+Maharashtra+400056/@19.1050309,72.7588764,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c9da84d79045:0x9ccaf1feb28d342!2m2!1d72.8289169!2d19.1050441?entry=ttu"><button
             id="location" class="btn btn-warning my-1">View location</button></a>
-        <button  class="btn btn-warning mark">Wishlist</button>
+        <button class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
 
-    <div class="hstl"> <!----- third hstl ------->
+    <div data-id="mumbai3" class="hstl"> <!----- third hstl ------->
       <img class="img" src="images/mumbai/a.jpg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
 
@@ -184,11 +184,11 @@
         <a target="_blank"
           href="https://www.google.com/travel/search?q=BB%20Bhavan%20PG%2FHostel%20mumbai&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4597339%2C4757164%2C4814050%2C4850738%2C4864715%2C4874190%2C4886480%2C4893075%2C4924070%2C4965990%2C4990494%2C72280816%2C72285074%2C72286089%2C72298667%2C72300991%2C72302247%2C72305577%2C72310433%2C72311284%2C72314786%2C72314854&hl=en-IN&gl=in&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI5w8QCBgNEgcI5w8QCBgOGAEyAhAAKgcKBToDSU5S&qs=CAEyE0Nnb0lrcmUycnJEbTR2dHVFQUU4CloCCAE&ap=MABoAboBCG92ZXJ2aWV3&ictx=1&ved=0CAAQ5JsGahcKEwjo0bijg7KAAxUAAAAAHQAAAAAQCg"><button
             id="location" class="btn btn-warning my-1">View location</button></a>
-        <button  class="btn btn-warning mark">Wishlist</button>
+        <button class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
 
-    <div class="hstl"> <!---- fourth hstl ----->
+    <div data-id="mumbai4" class="hstl"> <!---- fourth hstl ----->
       <img class="img" src="images/mumbai/4.jpg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
 
@@ -215,11 +215,11 @@
         <a target="_blank"
           href="https://www.google.com/maps/place/OXOTEL/@19.1240922,72.9243306,15z/data=!4m6!3m5!1s0x3be7c72ba66b7355:0x396afa9f75c7fe2b!8m2!3d19.1240922!4d72.9243306!16s%2Fg%2F11n74dh635?entry=ttu"><button
             id="location" class="btn btn-warning my-1">View location</button></a>
-        <button  class="btn btn-warning mark">Wishlist</button>
+        <button class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
 
-    <div class="hstl"> <!------- fifth hstl ------->
+    <div data-id="mumbai5" class="hstl"> <!------- fifth hstl ------->
       <img class="img" src="images/mumbai/5.png" width="350px" height="200px" alt="hostel-1">
       <div class="info">
 
@@ -246,11 +246,11 @@
         <a target="_blank"
           href="https://www.google.com/maps/dir/19.1278433,72.8604495/2,+Datta+Jagdamba+Mandir+Marg,+Asmita+Mogra+CHS,+Radha+Krishna+Nagar,+Aghadi+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400053/@19.1254105,72.7907549,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c828e6b5b44f:0xd186f60370a42e3b!2m2!1d72.8607954!2d19.1254238?entry=ttu"><button
             id="location" class="btn btn-warning my-1">View location</button></a>
-        <button  class="btn btn-warning mark">Wishlist</button>
+        <button class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
 
-    <div class="hstl"> <!------ sixth hstl ------->
+    <div data-id="mumbai6" class="hstl"> <!------ sixth hstl ------->
       <img class="img" src="images/mumbai/6.jpeg" width="350px" height="200px" alt="hostel-1">
       <div class="info">
 
@@ -277,7 +277,7 @@
         <a target="_blank"
           href="https://www.google.com/maps/dir/19.105732,72.8417725/1st+Floor,+W,+Uttam+Villa,+102,+St+Mary+Rd,+opp.+Old+Post+Office,+Vile+Parle,+Mumbai,+Maharashtra+400056/@19.0997303,72.7717346,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c9b76bd760cb:0x964ec963c1745e73!2m2!1d72.8417751!2d19.0997435?entry=ttu"><button
             id="location" class="btn btn-warning my-1">View location</button></a>
-        <button  class="btn btn-warning mark">Wishlist</button>
+        <button class="btn btn-warning mark">Wishlist</button>
       </div>
     </div>
   </div>
