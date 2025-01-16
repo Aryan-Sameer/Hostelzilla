@@ -11,16 +11,6 @@ let Lpass = localStorage.getItem("password")
 
 const buttons = document.querySelectorAll('.mark')
 
-/************************************************ Admin ***********************************/
-
-if (Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com" && Lphone == "8247303503" && Lcity == "Hyderabad") {
-  $("#addHostels").html("Add Hostels")
-  Ldesig = Ldesig + " (Admin) "
-  buttons.forEach(e => {
-    e.toggleAttribute("disabled")
-  })
-}
-
 /******************************************** my account page *****************************/
 //logging in
 $(document).ready(function () {
@@ -30,11 +20,49 @@ $(document).ready(function () {
       $(this).val("")
     });
     $("#password").show()
-    if (localStorage.length != 0 && !(Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com" && Lphone == "8247303503" && Lcity == "Hyderabad")) {
+    if (localStorage.length != 0) {
       document.getElementById("edit").toggleAttribute("disabled")
     }
   })
 })
+
+//edit details
+$("#edit").click(function () {
+  if (localStorage.length != 0) {
+    $("#account-input").slideToggle()
+
+    $('#iuser').val(Luser)
+    $('#idesig').val(Ldesig)
+    $('#iemail').val(Lemail)
+    $('#iphn').val(Lphone)
+    $('#icity').val(Lcity)
+    $('#ipass').val(Lpass)
+
+    $("#password").hide()
+    document.getElementById("login").toggleAttribute("disabled")
+  }
+});
+
+//loging out
+$("#logout").click(function () {
+  if (localStorage.length != 0) {
+    let logout = confirm("Do you really want to logout?")
+    if (logout) {
+      localStorage.clear()
+      location.reload()
+    }
+  }
+})
+
+//display the data
+if (localStorage.length != 0) {
+  $('#name').html(Luser)
+  $('#designation').html(Ldesig)
+  $('#email').html(Lemail)
+  $('#phn').html(Lphone)
+  $('#city').html(Lcity)
+  $('.acc-name').html(Luser)
+}
 
 /******************************************** on submit **********************************/
 
@@ -88,44 +116,6 @@ $("#submit-button").click(function () {
   }
 
 })
-
-//edit details
-$("#edit").click(function () {
-  if ((localStorage.length != 0) && !(Luser == "Aryan Sameer" && Lpass == "Hostel12" && Lemail == "sameeraryan2005@gmail.com" && Lphone == "8247303503" && Lcity == "Hyderabad")) {
-    $("#account-input").slideToggle()
-
-    $('#iuser').val(Luser)
-    $('#idesig').val(Ldesig)
-    $('#iemail').val(Lemail)
-    $('#iphn').val(Lphone)
-    $('#icity').val(Lcity)
-    $('#ipass').val(Lpass)
-
-    $("#password").hide()
-    document.getElementById("login").toggleAttribute("disabled")
-  }
-});
-
-//loging out
-$("#logout").click(function () {
-  if (localStorage.length != 0) {
-    let logout = confirm("Do you really want to logout?")
-    if (logout) {
-      localStorage.clear()
-      location.reload()
-    }
-  }
-})
-
-//display the data
-if (localStorage.length != 0) {
-  $('#name').html(Luser)
-  $('#designation').html(Ldesig)
-  $('#email').html(Lemail)
-  $('#phn').html(Lphone)
-  $('#city').html(Lcity)
-  $('.acc-name').html(Luser)
-}
 
 /************************************************** side bar ******************************************/
 
